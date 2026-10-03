@@ -1,0 +1,388 @@
+/* =========================================================
+   CHALLENGE TURMA DO BEM - SPRINT 1
+   style.css - base do site
+
+   DONO DESTE ARQUIVO: Richard
+   Usado por: as 7 paginas
+
+   ATENCAO: so o dono edita este arquivo. Precisa de uma cor
+   nova ou de um ajuste? Pede no grupo - nao edita aqui.
+
+   Ordem do arquivo:
+   1. Variaveis        6. Topo das paginas
+   2. Reset            7. Secoes e grades
+   3. Base             8. Componentes (botao, cartao, tabela, aviso)
+   4. Cabecalho        9. Rodape
+   5. Conteudo        10. Media queries
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   1. VARIAVEIS
+   Cada cor e escrita uma vez aqui e usada com var(--nome)
+   no resto do site. Para mudar uma cor do site inteiro,
+   muda-se so aqui.
+   --------------------------------------------------------- */
+:root {
+  /* cores da marca Turma do Bem */
+  --limao: #CED600;
+  --laranja: #E88407;
+  --laranja-escuro: #9E5A04;   /* laranja para usar como cor de letra */
+  --laranja-claro: #FDEEDA;    /* fundo suave para avisos */
+
+  /* cores neutras */
+  --preto: #111110;
+  --texto: #57574F;
+  --cinza: #6E6E68;
+  --linha: #E6E6DE;
+  --fundo: #F7F7F2;
+  --branco: #FFFFFF;
+
+  /* fontes - todas ja vem instaladas no computador,
+     nao precisa importar nada */
+  --fonte-texto: Arial, Helvetica, sans-serif;
+  --fonte-titulo: "Trebuchet MS", Arial, sans-serif;
+}
+
+
+/* ---------------------------------------------------------
+   2. RESET
+   Tira as margens que o navegador coloca sozinho, para o
+   layout comecar do zero.
+   --------------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+/* ---------------------------------------------------------
+   3. BASE
+   O jeito padrao de textos e titulos em todas as paginas.
+   --------------------------------------------------------- */
+body {
+  font-family: var(--fonte-texto);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--texto);
+  background-color: var(--fundo);
+}
+
+h1, h2, h3 {
+  font-family: var(--fonte-titulo);
+  color: var(--preto);
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 26px;
+  margin-bottom: 12px;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+p {
+  margin-bottom: 12px;
+}
+
+/* link dentro de um texto: laranja escuro e sublinhado */
+p a {
+  color: var(--laranja-escuro);
+  text-decoration: underline;
+}
+
+/* rotulo pequeno em letra maiuscula, acima de um titulo */
+.rotulo {
+  font-family: var(--fonte-titulo);
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--laranja-escuro);
+  margin-bottom: 8px;
+}
+
+/* paragrafo maior, logo abaixo de um titulo */
+.texto-apoio {
+  font-size: 18px;
+  color: var(--cinza);
+}
+
+/* texto pequeno, para legenda e fonte de dado */
+.texto-pequeno {
+  font-size: 13px;
+  color: var(--cinza);
+}
+
+
+/* ---------------------------------------------------------
+   4. CABECALHO
+   Logo de um lado, menu do outro. Igual nas 7 paginas.
+   --------------------------------------------------------- */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 24px;
+  background-color: var(--branco);
+  border-bottom: 1px solid var(--linha);
+}
+
+header img {
+  height: 40px;
+  width: auto;
+}
+
+header ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+header nav a {
+  display: block;
+  padding: 8px 12px;
+  font-size: 15px;
+  color: var(--texto);
+  border-bottom: 3px solid transparent;
+}
+
+header nav a:hover {
+  color: var(--preto);
+  border-bottom-color: var(--linha);
+}
+
+/* a pagina que esta aberta fica marcada no menu */
+header nav a.ativo {
+  color: var(--preto);
+  font-weight: bold;
+  border-bottom-color: var(--limao);
+}
+
+
+/* ---------------------------------------------------------
+   5. CONTEUDO
+   O <main> fica centralizado e com largura maxima, para o
+   texto nao esticar demais em tela grande.
+   --------------------------------------------------------- */
+main {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 24px 60px;
+}
+
+
+/* ---------------------------------------------------------
+   6. TOPO DAS PAGINAS
+   O bloco de titulo no comeco de cada pagina interna.
+   Uso: <section class="topo-pagina"> com h1 e um paragrafo
+   --------------------------------------------------------- */
+.topo-pagina {
+  padding: 48px 0 32px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid var(--linha);
+}
+
+.topo-pagina p {
+  max-width: 640px;
+  margin-top: 12px;
+  font-size: 18px;
+  color: var(--cinza);
+}
+
+
+/* ---------------------------------------------------------
+   7. SECOES E GRADES
+   .secao     da espaco entre um bloco e outro da pagina
+   .grade-2   coloca 2 itens lado a lado (e .grade-3, .grade-4)
+   As colunas so aparecem a partir de 992px - ver item 10.
+   --------------------------------------------------------- */
+.secao {
+  margin-bottom: 56px;
+}
+
+.grade-2,
+.grade-3,
+.grade-4 {
+  display: grid;
+  grid-template-columns: 1fr;   /* tela pequena: um embaixo do outro */
+  gap: 20px;
+}
+
+
+/* ---------------------------------------------------------
+   8. COMPONENTES
+   Pecas prontas para usar em qualquer pagina.
+   --------------------------------------------------------- */
+
+/* --- 8a. Botao --- */
+.botao {
+  display: inline-block;
+  font-family: var(--fonte-titulo);
+  font-size: 15px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: 2px solid var(--preto);
+  border-radius: 4px;
+  background-color: var(--branco);
+  color: var(--preto);
+}
+
+.botao:hover {
+  background-color: var(--preto);
+  color: var(--branco);
+}
+
+/* botao principal, laranja.
+   A letra e PRETA de proposito: branco sobre este laranja
+   fica com contraste baixo e dificulta a leitura. */
+.botao-laranja {
+  background-color: var(--laranja);
+  border-color: var(--laranja);
+}
+
+.botao-laranja:hover {
+  background-color: var(--laranja-escuro);
+  border-color: var(--laranja-escuro);
+  color: var(--branco);
+}
+
+/* --- 8b. Cartao --- */
+.cartao {
+  background-color: var(--branco);
+  border: 1px solid var(--linha);
+  border-radius: 6px;
+  padding: 24px;
+}
+
+/* faixa colorida em cima do cartao */
+.cartao-limao {
+  border-top: 4px solid var(--limao);
+}
+
+.cartao-laranja {
+  border-top: 4px solid var(--laranja);
+}
+
+/* --- 8c. Tabela --- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--branco);
+  border: 1px solid var(--linha);
+}
+
+th,
+td {
+  padding: 14px 16px;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--linha);
+}
+
+th {
+  font-family: var(--fonte-titulo);
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--cinza);
+  background-color: var(--fundo);
+}
+
+/* --- 8d. Aviso --- */
+/* caixa de destaque, para uma observacao importante */
+.aviso {
+  background-color: var(--laranja-claro);
+  border-left: 5px solid var(--laranja);
+  border-radius: 0 6px 6px 0;
+  padding: 16px 20px;
+  color: var(--preto);
+}
+
+
+/* ---------------------------------------------------------
+   9. RODAPE
+   Igual nas 7 paginas.
+   --------------------------------------------------------- */
+footer {
+  background-color: var(--preto);
+  color: #BFBFB6;
+  padding: 32px 24px;
+  font-size: 14px;
+}
+
+footer p {
+  margin-bottom: 6px;
+}
+
+
+/* ---------------------------------------------------------
+   10. MEDIA QUERIES
+   Todas juntas aqui no fim do arquivo.
+   --------------------------------------------------------- */
+
+/* a partir de 992px (notebook): colunas lado a lado,
+   mais espaco nas bordas e titulo maior */
+@media (min-width: 992px) {
+
+  header,
+  footer {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .grade-2 { grid-template-columns: 1fr 1fr; }
+  .grade-3 { grid-template-columns: 1fr 1fr 1fr; }
+  .grade-4 { grid-template-columns: 1fr 1fr 1fr 1fr; }
+}
+
+/* a partir de 1300px (monitor grande): conteudo mais largo
+   e mais respiro entre os blocos */
+@media (min-width: 1300px) {
+
+  main {
+    max-width: 1200px;
+  }
+
+  h1 {
+    font-size: 44px;
+  }
+
+  .grade-2,
+  .grade-3,
+  .grade-4 {
+    gap: 28px;
+  }
+
+  .topo-pagina {
+    padding-top: 64px;
+  }
+}
