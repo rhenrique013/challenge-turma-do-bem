@@ -14,3 +14,109 @@
 /* 2. FAQ - os <details> e <summary> */
 
 /* 3. MEDIA QUERIES destas paginas - no fim do arquivo */
+
+
+/* 1. CARDS DOS INTEGRANTES - grade, foto, nome, links */
+
+h1,
+.intro {
+  text-align: center;
+}
+
+/* deixa os cards lado a lado */
+.equipe {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px auto;
+  max-width: 1100px;
+}
+
+/* cada integrante (no HTML a classe é "cards", com S) */
+.cards {
+  background-color: white;
+  width: 260px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* foto redonda */
+.equipe .cards img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+}
+
+/* nome */
+.cards h2 {
+  font-size: 20px;
+  margin: 15px 0 10px;
+}
+
+.cards p {
+  margin: 6px 0;
+}
+
+.frase {
+  font-style: italic;
+  color: #555555;
+  margin: 15px 0;
+}
+
+/* links: margin-top auto empurra para o fim do card */
+.links {
+  margin-top: auto;
+}
+
+.links a {
+  color: #b45f00;
+  font-weight: bold;
+  margin: 0 8px;
+}
+
+
+/* 2. FAQ - os <details> e <summary> */
+
+.faq {
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+details {
+  background-color: white;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+details p {
+  margin-top: 10px;
+}
+
+
+/* 3. MEDIA QUERIES destas paginas - no fim do arquivo */
+
+/* telas de ate 600px (celular) */
+@media (max-width: 600px) {
+  .cards {
+    width: 100%;
+  }
+
+  .equipe {
+    padding: 0 15px;
+  }
+}
