@@ -48,11 +48,11 @@ _A preencher quando as páginas estiverem prontas._
 
 | Nome completo | RM | Turma | GitHub | LinkedIn |
 |---|---|---|---|---|
-| Richard |  | 1TDS |  |  |
-| Diego |  | 1TDS |  |  |
-| Gustavo Andrade |  | 1TDS |  |  |
-| Gustavo Rocha |  | 1TDS |  |  |
-| Renato |  | 1TDS |  |  |
+| Richard Henrique dos Santos Souza | 576509 | 1TDSPS |  |  |
+| Diego Silva | 575925 | 1TDSPS |  |  |
+| Gustavo Andrade | 575951 | 1TDSPS |  |  |
+| Gustavo Rocha Batista | 570672 | 1TDSPS |  |  |
+| Renato Zanchin | 576199 | 1TDSPS |  |  |
 
 ## 📬 Contato
 
