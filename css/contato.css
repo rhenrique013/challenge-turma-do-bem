@@ -28,7 +28,7 @@
   font-family: "Trebuchet MS", Arial, sans-serif;
   font-size: 15px;
   font-weight: bold;
-  color: var(--preto);
+  color: var black  ;
 }
 
 .campo input,
@@ -39,7 +39,7 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
   color: var(--preto);
-  background-color: var(--branco);
+  background-color: var white  ;
   border: 1px solid var(--linha);
   border-radius: 4px;
 }
@@ -48,15 +48,15 @@
 .campo input:focus,
 .campo select:focus,
 .campo textarea:focus {
-  border-color: var(--preto);
-  outline: 2px solid var(--limao);
+  border-color: var black  ;
+  outline: 2px solid var green  ;
 }
 
 .campo-dica {
   display: block;
   margin-top: 6px;
   font-size: 13px;
-  color: var(--cinza);
+  color: var gray;
 }
 
 /* lista de canais de contato, ao lado do formulario */
@@ -76,7 +76,7 @@
   font-family: "Trebuchet MS", Arial, sans-serif;
   font-weight: bold;
   font-size: 15px;
-  color: var(--preto);
+  color: var black  ;
 }
 
 .contato-endereco {
@@ -90,8 +90,8 @@
   padding-top: 90px;
   text-align: center;
   font-size: 14px;
-  color: var(--cinza);
-  background-color: var(--branco);
+  color: var grey  ;
+  background-color: var white  ;
   border: 2px dashed var(--linha);
   border-radius: 4px;
 }
