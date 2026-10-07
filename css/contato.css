@@ -18,3 +18,87 @@
 /* 4. MEDIA QUERIES desta pagina - no fim do arquivo */
 
 
+.campo {
+  margin-bottom: 18px;
+}
+
+.campo label {
+  display: block;
+  margin-bottom: 6px;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--preto);
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+  width: 100%;
+  padding: 12px 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: var(--preto);
+  background-color: var(--branco);
+  border: 1px solid var(--linha);
+  border-radius: 4px;
+}
+
+/* borda destacada no campo que esta sendo preenchido */
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+  border-color: var(--preto);
+  outline: 2px solid var(--limao);
+}
+
+.campo-dica {
+  display: block;
+  margin-top: 6px;
+  font-size: 13px;
+  color: var(--cinza);
+}
+
+/* lista de canais de contato, ao lado do formulario */
+.contato-linha {
+  display: flex;
+  gap: 12px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--linha);
+}
+
+.contato-linha:last-child {
+  border-bottom: none;
+}
+
+.contato-rotulo {
+  width: 90px;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  color: var(--preto);
+}
+
+.contato-endereco {
+  font-style: normal;
+}
+
+/* espaco reservado para o mapa */
+.mapa {
+  height: 220px;
+  margin-top: 20px;
+  padding-top: 90px;
+  text-align: center;
+  font-size: 14px;
+  color: var(--cinza);
+  background-color: var(--branco);
+  border: 2px dashed var(--linha);
+  border-radius: 4px;
+}
+
+/* formulario a esquerda, canais a direita */
+.layout-contato {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+}
