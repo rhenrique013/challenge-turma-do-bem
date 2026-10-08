@@ -18,40 +18,296 @@
        Seu trabalho e so o que fica dentro do <main>.
        ===================================================================== -->
 
-  <header>
-    <a href="index.html">
-      <img src="imagens/logo-tdb.png" alt="Logotipo da Turma do Bem">
-    </a>
+  <!-- ============ CABECALHO (igual em todas as paginas) ============ -->
+  <header class="cabecalho">
+    <div class="container cabecalho-interno">
 
-    <nav>
-      <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="solucao.html" class="ativo">A solução</a></li>
-        <li><a href="painel.html">O painel</a></li>
-        <li><a href="integrantes.html">Integrantes</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="contato.html">Contato</a></li>
-      </ul>
-    </nav>
+      <a href="index.html" class="cabecalho-marca">
+        <img src="imagens/logo-tdb.png" alt="Logotipo da Turma do Bem">
+        <span class="cabecalho-nome">sorria<span>.</span></span>
+      </a>
+
+      <nav aria-label="Navegação principal">
+        <ul class="menu-lista">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="solucao.html" class="ativo">A solução</a></li>
+          <li><a href="painel.html">O painel</a></li>
+          <li><a href="integrantes.html">Integrantes</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+
+    </div>
   </header>
 
   <main>
-      <!-- 1. <h1> + 1 paragrafo explicando o que a tela resolve           -->
 
-      <!-- 2. ESQUEMA DA TELA: desenho estrutural em CSS, nao print.
-           Caixa com barra de titulo, menu lateral e area de conteudo.
-           Ver o prototipo em front-end/prototipo/solucao.html             -->
+    <section class="topo-pagina">
+      <div class="container">
+        <p class="rotulo">A solução · página 1 de 2</p>
+        <h1>Do problema ao fluxo</h1>
+        <p>
+          Onde a informação se perde hoje e por onde ela passa a andar.
+          Na página seguinte, como isso aparece na tela.
+        </p>
+      </div>
+    </section>
 
-      <!-- 3. LEGENDA: lista <ol> numerando as partes do esquema           -->
 
-      <!-- 4. AVISO: deixar escrito que e desenho estrutural da Sprint 1   -->
+    <!-- ---------- AVISO ---------- -->
+    <section class="secao secao-branca">
+      <div class="container">
+        <div class="aviso">
+          <p>
+            <strong>Esta é a primeira das quatro entregas.</strong>
+            Os desenhos abaixo mostram a estrutura da solução, não o
+            acabamento final. A cada sprint eles ganham detalhe e
+            funcionamento real.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ---------- O PROBLEMA ---------- -->
+    <section class="secao">
+      <div class="container">
+
+        <div class="secao-cabecalho">
+          <p class="rotulo">O problema</p>
+          <h2>A informação entra por quatro portas e não se encontra</h2>
+          <p class="texto-apoio">
+            Cada canal guarda o seu pedaço. Ninguém tem a pessoa inteira.
+          </p>
+        </div>
+
+        <div class="grade-4">
+          <article class="cartao">
+            <h3>Site</h3>
+            <p>Formulário cai no e-mail.</p>
+          </article>
+          <article class="cartao">
+            <h3>Doação online</h3>
+            <p>Fica no sistema de pagamento.</p>
+          </article>
+          <article class="cartao">
+            <h3>Nota Fiscal Paulista</h3>
+            <p>Relatório separado, sem nome.</p>
+          </article>
+          <article class="cartao">
+            <h3>WhatsApp</h3>
+            <p>Conversa no celular de alguém.</p>
+          </article>
+        </div>
+
+        <div class="cartao cartao-laranja espaco-acima">
+          <h3>Resultado</h3>
+          <p>
+            Quem doou em 2024 não é reconhecido em 2026. A campanha nova
+            fala com quem já é doador como se fosse a primeira vez, e o
+            relatório de fim de ano é montado somando planilha à mão.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ---------- O FLUXO ---------- -->
+    <section class="secao secao-branca">
+      <div class="container">
+
+        <div class="secao-cabecalho">
+          <p class="rotulo">A proposta</p>
+          <h2>O caminho em quatro passos</h2>
+        </div>
+
+        <div class="grade-4">
+
+          <article class="cartao">
+            <p class="passo-numero">1</p>
+            <h3>Entrada</h3>
+            <p>Seja qual for o canal, a pessoa é registrada uma vez
+               só, com o canal de origem anotado.</p>
+          </article>
+
+          <article class="cartao">
+            <p class="passo-numero">2</p>
+            <h3>Cadastro único</h3>
+            <p>Se já existe, o registro é atualizado em vez de
+               duplicado. Uma pessoa, uma ficha.</p>
+          </article>
+
+          <article class="cartao">
+            <p class="passo-numero">3</p>
+            <h3>Histórico</h3>
+            <p>Toda doação, contato e resposta fica na linha do
+               tempo daquela pessoa.</p>
+          </article>
+
+          <article class="cartao">
+            <p class="passo-numero">4</p>
+            <h3>Ação</h3>
+            <p>A equipe filtra a base e fala com o grupo certo,
+               em vez de disparar para todo mundo.</p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ---------- ESBOCO DAS TELAS PUBLICAS ---------- -->
+    <section class="secao">
+      <div class="container">
+
+        <div class="secao-cabecalho">
+          <p class="rotulo">A parte que o doador vê</p>
+          <h2>Duas telas do lado público</h2>
+        </div>
+
+        <div class="grade-2">
+
+          <!-- tela: quero doar -->
+          <div>
+
+            <div class="tela">
+              <div class="tela-barra">
+                <div class="tela-bolinhas"><span></span><span></span><span></span></div>
+                <p class="tela-titulo">Quero doar</p>
+              </div>
+
+              <div class="tela-conteudo">
+                <div class="linha-cinza linha-media"></div>
+                <div class="linha-cinza linha-curta"></div>
+
+                <div class="grade-3 espaco-tela">
+                  <div class="indicador">
+                    <p class="indicador-valor">R$ 30</p>
+                    <p class="indicador-nome">por mês</p>
+                  </div>
+                  <div class="indicador">
+                    <p class="indicador-valor">R$ 60</p>
+                    <p class="indicador-nome">por mês</p>
+                  </div>
+                  <div class="indicador">
+                    <p class="indicador-valor">Outro</p>
+                    <p class="indicador-nome">valor</p>
+                  </div>
+                </div>
+
+                <div class="linha-cinza"></div>
+                <div class="linha-cinza linha-media"></div>
+
+                <div class="area-botoes">
+                  <span class="botao botao-laranja">Continuar</span>
+                </div>
+              </div>
+            </div>
+
+            <p class="legenda">
+              Escolha do valor, depois os dados. O número de jovens que
+              aquele valor atende aparece ao lado.
+            </p>
+
+          </div>
+
+          <!-- tela: quero ser voluntario -->
+          <div>
+
+            <div class="tela">
+              <div class="tela-barra">
+                <div class="tela-bolinhas"><span></span><span></span><span></span></div>
+                <p class="tela-titulo">Quero ser dentista voluntário</p>
+              </div>
+
+              <div class="tela-conteudo">
+                <div class="linha-cinza linha-media"></div>
+                <div class="linha-cinza linha-curta"></div>
+
+                <div class="espaco-tela">
+                  <div class="indicador campo-esboco">
+                    <p class="indicador-nome">Nome e CRO</p>
+                    <div class="linha-cinza"></div>
+                  </div>
+                  <div class="indicador campo-esboco">
+                    <p class="indicador-nome">Cidade de atendimento</p>
+                    <div class="linha-cinza"></div>
+                  </div>
+                  <div class="indicador">
+                    <p class="indicador-nome">Quantas vagas por mês</p>
+                    <div class="linha-cinza linha-curta"></div>
+                  </div>
+                </div>
+
+                <div class="area-botoes">
+                  <span class="botao botao-limao">Enviar inscrição</span>
+                </div>
+              </div>
+            </div>
+
+            <p class="legenda">
+              A inscrição entra direto na fila de voluntários do
+              painel, com região e disponibilidade.
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="area-botoes">
+          <a href="painel.html" class="botao botao-laranja">Ver a parte interna</a>
+        </div>
+
+      </div>
+    </section>
+
   </main>
 
-  <footer>
-    <p>Sorria &middot; Challenge FIAP 1TDS &middot; Sprint 1 &middot; 2026</p>
-    <p>Trabalho acadêmico sem fins comerciais. A marca e os dados da
-       Turma do Bem pertencem à organização.</p>
+  <!-- ============ RODAPE (igual em todas as paginas) ============ -->
+  <footer class="rodape">
+    <div class="container">
+
+      <div class="rodape-topo">
+
+        <div>
+          <h4>O projeto</h4>
+          <p>Sorria é a plataforma de captação e relacionamento
+             desenhada para a ONG Turma do Bem.</p>
+          <p>Challenge FIAP · 1TDS · Sprint 1 · 2026.</p>
+        </div>
+
+        <div>
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="solucao.html">A solução</a></li>
+            <li><a href="painel.html">O painel</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>A equipe</h4>
+          <ul>
+            <li><a href="integrantes.html">Integrantes</a></li>
+            <li><a href="faq.html">Perguntas frequentes</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="#">Repositório no GitHub</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <p class="rodape-base">
+        Trabalho acadêmico sem fins comerciais. A marca e os dados da
+        Turma do Bem pertencem à organização.
+      </p>
+
+    </div>
   </footer>
 
 </body>
