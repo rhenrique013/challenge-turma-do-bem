@@ -38,6 +38,135 @@
   </header>
 
   <main>
+
+    <section class="topo-pagina">
+      <div class="container">
+        <p class="rotulo">Contato</p>
+        <h1>Fale com a gente</h1>
+        <p>
+          O formulário à esquerda chega na equipe do projeto.
+          Os dados à direita são os canais da Turma do Bem.
+        </p>
+      </div>
+    </section>
+
+
+    <section class="secao secao-branca">
+      <div class="container layout-contato">
+
+        <!-- ---------- FORMULARIO ---------- -->
+        <div>
+
+          <div class="secao-cabecalho">
+            <p class="rotulo">Formulário</p>
+            <h2>Mande uma mensagem</h2>
+          </div>
+
+          <form action="#" method="post">
+
+            <div class="campo">
+              <label for="nome">Nome completo</label>
+              <input type="text" id="nome" name="nome"
+                     placeholder="Como devemos te chamar" required>
+            </div>
+
+            <div class="campo">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email"
+                     placeholder="voce@email.com" required>
+              <span class="campo-dica">Usamos só para responder.</span>
+            </div>
+
+            <div class="campo">
+              <label for="telefone">Telefone</label>
+              <input type="tel" id="telefone" name="telefone"
+                     placeholder="(11) 90000-0000">
+            </div>
+
+            <div class="campo">
+              <label for="assunto">Assunto</label>
+              <select id="assunto" name="assunto" required>
+                <option value="">Escolha um assunto</option>
+                <option value="doar">Quero doar</option>
+                <option value="voluntario">Quero ser dentista voluntário</option>
+                <option value="tratamento">Preciso de tratamento</option>
+                <option value="empresa">Sou empresa e quero apoiar</option>
+                <option value="projeto">Dúvida sobre o projeto</option>
+                <option value="outro">Outro assunto</option>
+              </select>
+            </div>
+
+            <div class="campo">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" rows="6"
+                        placeholder="Escreva aqui"></textarea>
+            </div>
+
+            <button type="submit" class="botao botao-laranja">Enviar mensagem</button>
+
+          </form>
+
+        </div>
+
+        <!-- ---------- CANAIS DA ONG ---------- -->
+        <div>
+
+          <div class="secao-cabecalho">
+            <p class="rotulo">Canais</p>
+            <h2>Turma do Bem</h2>
+          </div>
+
+          <div class="cartao">
+
+            <div class="contato-linha">
+              <span class="contato-rotulo">Site</span>
+              <span><a href="https://turmadobem.org.br" target="_blank">turmadobem.org.br</a></span>
+            </div>
+
+            <div class="contato-linha">
+              <span class="contato-rotulo">E-mail</span>
+              <span>[preencher com o e-mail oficial]</span>
+            </div>
+
+            <div class="contato-linha">
+              <span class="contato-rotulo">Telefone</span>
+              <span>[preencher com o telefone oficial]</span>
+            </div>
+
+            <div class="contato-linha">
+              <span class="contato-rotulo">Endereço</span>
+              <address class="contato-endereco">
+                [Rua e número]<br>
+                São Paulo — SP<br>
+                CEP [00000-000]
+              </address>
+            </div>
+
+          </div>
+
+          <!-- Espaco reservado para o mapa. Nesta sprint fica como bloco,
+               porque mapa embutido depende de JavaScript. -->
+          <div class="mapa">
+            <strong>Mapa</strong><br>
+            área reservada para a localização da sede
+          </div>
+
+          <div class="cartao espaco-acima">
+            <h3>Sobre o projeto</h3>
+            <p>
+              Dúvidas sobre este trabalho acadêmico? Fale com a equipe
+              pelo formulário ou pelo repositório no GitHub.
+            </p>
+            <div class="area-botoes">
+              <a href="integrantes.html" class="botao botao-branco">Ver a equipe</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
       <!-- 1. <h1> + 1 paragrafo                                           -->
 
       <!-- 2. FORMULARIO <form>: nome · email · assunto (<select>) ·
@@ -57,3 +186,4 @@
 
 </body>
 </html>
+
