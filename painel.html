@@ -18,38 +18,277 @@
        Seu trabalho e so o que fica dentro do <main>.
        ===================================================================== -->
 
-  <header>
-    <a href="index.html">
-      <img src="imagens/logo-tdb.png" alt="Logotipo da Turma do Bem">
-    </a>
+  <!-- ============ CABECALHO (igual em todas as paginas) ============ -->
+  <header class="cabecalho">
+    <div class="container cabecalho-interno">
 
-    <nav>
-      <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="solucao.html">A solução</a></li>
-        <li><a href="painel.html" class="ativo">O painel</a></li>
-        <li><a href="integrantes.html">Integrantes</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="contato.html">Contato</a></li>
-      </ul>
-    </nav>
+      <a href="index.html" class="cabecalho-marca">
+        <img src="imagens/logo-tdb.png" alt="Logotipo da Turma do Bem">
+        <span class="cabecalho-nome">sorria<span>.</span></span>
+      </a>
+
+      <nav aria-label="Navegação principal">
+        <ul class="menu-lista">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="solucao.html">A solução</a></li>
+          <li><a href="painel.html" class="ativo">O painel</a></li>
+          <li><a href="integrantes.html">Integrantes</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+
+    </div>
   </header>
 
   <main>
-      <!-- 1. <h1> + 1 paragrafo: para quem e esse painel                  -->
 
-      <!-- 2. ESQUEMA DA TELA: os 4 indicadores + a area de listagem       -->
+    <section class="topo-pagina">
+      <div class="container">
+        <p class="rotulo">A solução · página 2 de 2</p>
+        <h1>O painel por dentro</h1>
+        <p>
+          O que a equipe da organização vê quando abre a ferramenta.
+          Estrutura das áreas, ainda em esboço.
+        </p>
+      </div>
+    </section>
 
-      <!-- 3. LEGENDA: o que cada indicador responde                       -->
 
-      <!-- 4. AVISO: desenho estrutural da Sprint 1                        -->
+    <section class="secao secao-branca">
+      <div class="container">
+        <div class="aviso">
+          <p>
+            <strong>Desenho estrutural.</strong> As telas abaixo mostram onde
+            cada informação mora e como a navegação se organiza.
+            O acabamento visual e o funcionamento chegam nas próximas sprints.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ---------- TELA 1: VISAO GERAL ---------- -->
+    <section class="secao">
+      <div class="container">
+
+        <div class="secao-cabecalho">
+          <p class="rotulo">Tela 1</p>
+          <h2>Visão geral</h2>
+          <p class="texto-apoio">
+            A primeira tela responde uma pergunta: como está o mês.
+          </p>
+        </div>
+
+        <div class="tela">
+
+          <div class="tela-barra">
+            <div class="tela-bolinhas"><span></span><span></span><span></span></div>
+            <p class="tela-titulo">Sorria — visão geral</p>
+          </div>
+
+          <div class="tela-corpo-menu">
+
+            <nav class="tela-menu">
+              <h4>Menu</h4>
+              <ul>
+                <li class="ativo">Visão geral</li>
+                <li>Doadores</li>
+                <li>Campanhas</li>
+                <li>Voluntários</li>
+                <li>Beneficiários</li>
+                <li>Relatórios</li>
+              </ul>
+            </nav>
+
+            <div class="tela-conteudo">
+
+              <div class="indicadores">
+                <div class="indicador">
+                  <p class="indicador-valor">1.240</p>
+                  <p class="indicador-nome">Doadores ativos</p>
+                </div>
+                <div class="indicador">
+                  <p class="indicador-valor">R$ 86 mil</p>
+                  <p class="indicador-nome">Doado no mês</p>
+                </div>
+                <div class="indicador">
+                  <p class="indicador-valor">318</p>
+                  <p class="indicador-nome">Dentistas ativos</p>
+                </div>
+                <div class="indicador">
+                  <p class="indicador-valor">74</p>
+                  <p class="indicador-nome">Fila de triagem</p>
+                </div>
+              </div>
+
+              <table class="tabela">
+                <caption>Doações recentes</caption>
+                <thead>
+                  <tr>
+                    <th>Doador</th>
+                    <th>Canal</th>
+                    <th>Valor</th>
+                    <th>Data</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>Ana Ribeiro</td><td>Site</td><td>R$ 60,00</td><td>28/09</td></tr>
+                  <tr><td>Marcos Lima</td><td>Nota Fiscal Paulista</td><td>R$ 18,40</td><td>28/09</td></tr>
+                  <tr><td>Clínica Sorriso Ltda.</td><td>Parceria</td><td>R$ 1.200,00</td><td>27/09</td></tr>
+                  <tr><td>Juliana Costa</td><td>Site</td><td>R$ 30,00</td><td>27/09</td></tr>
+                </tbody>
+              </table>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <p class="legenda">
+          Quatro indicadores no topo e a lista do que aconteceu logo abaixo.
+          O canal de entrada aparece em toda linha — é o dado que hoje se perde.
+        </p>
+
+      </div>
+    </section>
+
+
+    <!-- ---------- TELA 2: FICHA DO DOADOR ---------- -->
+    <section class="secao secao-branca">
+      <div class="container">
+
+        <div class="secao-cabecalho">
+          <p class="rotulo">Tela 2</p>
+          <h2>A ficha de um doador</h2>
+          <p class="texto-apoio">
+            É a tela que hoje não existe em lugar nenhum: a pessoa
+            inteira, num lugar só.
+          </p>
+        </div>
+
+        <div class="grade-2">
+
+          <div class="tela">
+
+            <div class="tela-barra">
+              <div class="tela-bolinhas"><span></span><span></span><span></span></div>
+              <p class="tela-titulo">Ficha · Ana Ribeiro</p>
+            </div>
+
+            <div class="tela-conteudo">
+              <h3>Ana Ribeiro</h3>
+              <p class="texto-pequeno">Doadora desde março de 2024</p>
+
+              <div class="grade-2 espaco-tela">
+                <div class="indicador">
+                  <p class="indicador-valor">R$ 720</p>
+                  <p class="indicador-nome">Total doado</p>
+                </div>
+                <div class="indicador">
+                  <p class="indicador-valor">12</p>
+                  <p class="indicador-nome">Doações</p>
+                </div>
+              </div>
+
+              <h4>Linha do tempo</h4>
+              <table class="tabela">
+                <tbody>
+                  <tr><td>28/09/2026</td><td>Doou R$ 60,00 pelo site</td></tr>
+                  <tr><td>12/09/2026</td><td>Abriu o e-mail da campanha</td></tr>
+                  <tr><td>28/08/2026</td><td>Doou R$ 60,00 pelo site</td></tr>
+                  <tr><td>03/2024</td><td>Primeiro cadastro</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+
+          <div>
+
+            <article class="cartao">
+              <h3>O que essa tela resolve</h3>
+              <p>
+                Antes de ligar ou escrever para alguém, a equipe sabe
+                há quanto tempo a pessoa doa, quanto já doou e qual foi
+                o último contato.
+              </p>
+            </article>
+
+            <article class="cartao espaco-acima">
+              <h3>De onde vem cada dado</h3>
+              <p>
+                Total e número de doações são somas da base.
+                A linha do tempo junta doações, e-mails e atendimentos
+                em ordem de data.
+              </p>
+            </article>
+
+            <article class="cartao cartao-laranja espaco-acima">
+              <h3>Próxima sprint</h3>
+              <p>
+                Esta tela ganha filtro por período e o botão de registrar
+                contato, que ainda depende de JavaScript.
+              </p>
+            </article>
+
+          </div>
+
+        </div>
+
+        <div class="area-botoes">
+          <a href="solucao.html" class="botao botao-branco">Voltar ao fluxo</a>
+          <a href="contato.html" class="botao botao-laranja">Falar com a equipe</a>
+        </div>
+
+      </div>
+    </section>
+
   </main>
 
-  <footer>
-    <p>Sorria &middot; Challenge FIAP 1TDS &middot; Sprint 1 &middot; 2026</p>
-    <p>Trabalho acadêmico sem fins comerciais. A marca e os dados da
-       Turma do Bem pertencem à organização.</p>
+  <!-- ============ RODAPE (igual em todas as paginas) ============ -->
+  <footer class="rodape">
+    <div class="container">
+
+      <div class="rodape-topo">
+
+        <div>
+          <h4>O projeto</h4>
+          <p>Sorria é a plataforma de captação e relacionamento
+             desenhada para a ONG Turma do Bem.</p>
+          <p>Challenge FIAP · 1TDS · Sprint 1 · 2026.</p>
+        </div>
+
+        <div>
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="solucao.html">A solução</a></li>
+            <li><a href="painel.html">O painel</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>A equipe</h4>
+          <ul>
+            <li><a href="integrantes.html">Integrantes</a></li>
+            <li><a href="faq.html">Perguntas frequentes</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="#">Repositório no GitHub</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <p class="rodape-base">
+        Trabalho acadêmico sem fins comerciais. A marca e os dados da
+        Turma do Bem pertencem à organização.
+      </p>
+
+    </div>
   </footer>
 
 </body>
