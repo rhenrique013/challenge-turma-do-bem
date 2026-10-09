@@ -7,17 +7,21 @@
 
    ATENCAO: so o dono edita este arquivo. Precisa de uma cor
    nova ou de um ajuste? Pede no grupo - nao edita aqui.
+
+   As cores vem das variaveis do style.css, por isso aqui
+   aparece var(--preto), var(--linha) etc.
    ========================================================= */
 
-/* 1. FORMULARIO - campos, labels, botao */
 
-/* 2. BLOCO DE CONTATO REAL */
+/* 1. LAYOUT - formulario a esquerda, canais a direita */
+.layout-contato {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+}
 
-/* 3. ENDERECO */
 
-/* 4. MEDIA QUERIES desta pagina - no fim do arquivo */
-
-
+/* 2. FORMULARIO - campos, labels, botao */
 .campo {
   margin-bottom: 18px;
 }
@@ -28,7 +32,7 @@
   font-family: "Trebuchet MS", Arial, sans-serif;
   font-size: 15px;
   font-weight: bold;
-  color: var black  ;
+  color: var(--preto);
 }
 
 .campo input,
@@ -39,7 +43,7 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
   color: var(--preto);
-  background-color: var white  ;
+  background-color: var(--branco);
   border: 1px solid var(--linha);
   border-radius: 4px;
 }
@@ -48,18 +52,19 @@
 .campo input:focus,
 .campo select:focus,
 .campo textarea:focus {
-  border-color: var black  ;
-  outline: 2px solid var green  ;
+  border-color: var(--preto);
+  outline: 2px solid var(--limao);
 }
 
 .campo-dica {
   display: block;
   margin-top: 6px;
   font-size: 13px;
-  color: var gray;
+  color: var(--cinza);
 }
 
-/* lista de canais de contato, ao lado do formulario */
+
+/* 3. CANAIS DE CONTATO E ENDERECO */
 .contato-linha {
   display: flex;
   gap: 12px;
@@ -76,29 +81,28 @@
   font-family: "Trebuchet MS", Arial, sans-serif;
   font-weight: bold;
   font-size: 15px;
-  color: var black  ;
+  color: var(--preto);
 }
 
+.contato-linha a {
+  color: var(--laranja-escuro);
+}
+
+.contato-linha a:hover {
+  text-decoration: underline;
+}
+
+/* tira o italico que o navegador coloca no <address> */
 .contato-endereco {
   font-style: normal;
 }
 
-/* espaco reservado para o mapa */
-.mapa {
-  height: 220px;
-  margin-top: 20px;
-  padding-top: 90px;
-  text-align: center;
-  font-size: 14px;
-  color: var grey  ;
-  background-color: var white  ;
-  border: 2px dashed var(--linha);
-  border-radius: 4px;
-}
 
-/* formulario a esquerda, canais a direita */
-.layout-contato {
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 40px;
+/* 4. MEDIA QUERIES desta pagina - no fim do arquivo */
+
+/* --- Telas grandes: 1300px ou mais --- */
+@media (min-width: 1300px) {
+  .layout-contato {
+    gap: 64px;
+  }
 }
