@@ -363,7 +363,10 @@ p:last-child {
   border-bottom: 1px solid #2A2A24;
 }
 
-.rodape h4 {
+/* titulo de cada coluna do rodape */
+.rodape-titulo {
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-weight: bold;
   color: var(--branco);
   font-size: 13px;
   letter-spacing: 2px;
@@ -498,7 +501,9 @@ p:last-child {
   padding: 18px 14px;
 }
 
-.tela-menu h4 {
+.tela-menu-titulo {
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-weight: bold;
   color: var(--limao);
   font-size: 12px;
   letter-spacing: 1px;
