@@ -13,28 +13,33 @@
        contato.html
        DONO DESTE ARQUIVO: Gustavo Andrade
 
-       NAO MEXA no <header> nem no <footer>: eles ja estao prontos e sao
-       iguais nas 7 paginas. A unica diferenca entre as paginas e o
-       class="ativo", que marca no menu a pagina em que voce esta.
-       Seu trabalho e so o que fica dentro do <main>.
+       NAO MEXA no <header> nem no <footer>: eles sao iguais nas 7
+       paginas. A unica diferenca entre as paginas e o class="ativo",
+       que marca no menu a pagina em que voce esta.
        ===================================================================== -->
 
-  <header>
-    <a href="index.html">
-      <img src="imagens/logo-tdb.png" alt="Logotipo da Turma do Bem">
-    </a>
+  <!-- ============ CABECALHO (igual em todas as paginas) ============ -->
+  <header class="cabecalho">
+    <div class="container cabecalho-interno">
 
-    <nav>
-      <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="solucao.html">A solução</a></li>
-        <li><a href="painel.html">O painel</a></li>
-        <li><a href="integrantes.html">Integrantes</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="contato.html" class="ativo">Contato</a></li>
-      </ul>
-    </nav>
+      <a href="index.html" class="cabecalho-marca">
+        <img src="imagens/logo-tdb.png" alt="Logotipo da Turma do Bem">
+        <span class="cabecalho-nome">sorria<span>.</span></span>
+      </a>
+
+      <nav aria-label="Navegação principal">
+        <ul class="menu-lista">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="solucao.html">A solução</a></li>
+          <li><a href="painel.html">O painel</a></li>
+          <li><a href="integrantes.html">Integrantes</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contato.html" class="ativo">Contato</a></li>
+        </ul>
+      </nav>
+
+    </div>
   </header>
 
   <main>
@@ -120,42 +125,35 @@
 
             <div class="contato-linha">
               <span class="contato-rotulo">Site</span>
-              <span><a href="https://turmadobem.org.br" target="_blank">turmadobem.org.br</a></span>
+              <span><a href="https://turmadobem.org.br" target="_blank" rel="noopener">turmadobem.org.br</a></span>
             </div>
 
             <div class="contato-linha">
               <span class="contato-rotulo">E-mail</span>
-              <span>[preencher com o e-mail oficial]</span>
+              <span><a href="mailto:faleconosco@tdb.org.br">faleconosco@tdb.org.br</a></span>
             </div>
 
             <div class="contato-linha">
               <span class="contato-rotulo">Telefone</span>
-              <span>[preencher com o telefone oficial]</span>
+              <span>(11) 5084-7276</span>
             </div>
 
             <div class="contato-linha">
               <span class="contato-rotulo">Endereço</span>
               <address class="contato-endereco">
-                [Rua e número]<br>
-                São Paulo — SP<br>
-                CEP [00000-000]
+                Rua Maurício Francisco Klabin, 449<br>
+                Vila Mariana, São Paulo - SP<br>
+                CEP 04120-020
               </address>
             </div>
 
-          </div>
-
-          <!-- Espaco reservado para o mapa. Nesta sprint fica como bloco,
-               porque mapa embutido depende de JavaScript. -->
-          <div class="mapa">
-            <strong>Mapa</strong><br>
-            área reservada para a localização da sede
           </div>
 
           <div class="cartao espaco-acima">
             <h3>Sobre o projeto</h3>
             <p>
               Dúvidas sobre este trabalho acadêmico? Fale com a equipe
-              pelo formulário ou pelo repositório no GitHub.
+              pelo formulário ao lado.
             </p>
             <div class="area-botoes">
               <a href="integrantes.html" class="botao botao-branco">Ver a equipe</a>
@@ -167,23 +165,51 @@
       </div>
     </section>
 
-      <!-- 1. <h1> + 1 paragrafo                                           -->
 
-      <!-- 2. FORMULARIO <form>: nome · email · assunto (<select>) ·
-           mensagem (<textarea>) · botao.
-           Todo campo precisa de <label for="..."> ligado ao id            -->
+</main>
 
-      <!-- 3. CONTATO REAL: e-mail, telefone e redes da ONG                -->
+  <!-- ============ RODAPE (igual em todas as paginas) ============ -->
+  <footer class="rodape">
+    <div class="container">
 
-      <!-- 4. ENDERECO: texto. Mapa so se nao precisar de script externo   -->
-  </main>
+      <div class="rodape-topo">
 
-  <footer>
-    <p>Sorria &middot; Challenge FIAP 1TDS &middot; Sprint 1 &middot; 2026</p>
-    <p>Trabalho acadêmico sem fins comerciais. A marca e os dados da
-       Turma do Bem pertencem à organização.</p>
+        <div>
+          <p class="rodape-titulo">O projeto</p>
+          <p>Sorria é a plataforma de captação e relacionamento
+             desenhada para a ONG Turma do Bem.</p>
+          <p>Challenge FIAP · 1TDSPS · Sprint 1 · 2026.</p>
+        </div>
+
+        <div>
+          <p class="rodape-titulo">Navegação</p>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="solucao.html">A solução</a></li>
+            <li><a href="painel.html">O painel</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="rodape-titulo">A equipe</p>
+          <ul>
+            <li><a href="integrantes.html">Integrantes</a></li>
+            <li><a href="faq.html">Perguntas frequentes</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="https://github.com/rhenrique013/challenge-turma-do-bem" target="_blank" rel="noopener">Repositório no GitHub</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <p class="rodape-base">
+        Trabalho acadêmico sem fins comerciais. A marca e os dados da
+        Turma do Bem pertencem à organização.
+      </p>
+
+    </div>
   </footer>
 
 </body>
 </html>
-
