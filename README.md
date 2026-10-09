@@ -63,7 +63,7 @@ challenge-turma-do-bem/
 |---|---|---|---|---|---|
 | <img src="imagens/equipe/richard.png" width="70"> | Richard Henrique dos Santos Souza | 576509 | 1TDSPS | [rhenrique013](https://github.com/rhenrique013) | [LinkedIn](https://www.linkedin.com/in/richardhenrique1312) |
 | <img src="imagens/equipe/diego.png" width="70"> | Diego Silva | 575925 | 1TDSPS | [Diegosilvadrs](https://github.com/Diegosilvadrs) | [LinkedIn](https://www.linkedin.com/in/diego-silva-drs) |
-| <img src="imagens/equipe/gustavo-andrade.png" width="70"> | Gustavo Andrade | 575951 | 1TDSPS | [eagu07](https://github.com/eagu07) | [LinkedIn](https://www.linkedin.com/in/gustavo-andrade-199429383) |
+| <img src="imagens/equipe/gustavo-andrade.png" width="70"> | Gustavo Andrade | 575971 | 1TDSPS | [eagu07](https://github.com/eagu07) | [LinkedIn](https://www.linkedin.com/in/gustavo-andrade-199429383) |
 | <img src="imagens/equipe/gustavo-rocha.png" width="70"> | Gustavo Rocha Batista | 570672 | 1TDSPS | [gustavo-rocha-batista](https://github.com/gustavo-rocha-batista) | [LinkedIn](https://www.linkedin.com/in/gustavo-rocha-batista) |
 | <img src="imagens/equipe/renato.png" width="70"> | Renato Zanchin | 576199 | 1TDSPS | [renatozftv](https://github.com/renatozftv) | [LinkedIn](https://www.linkedin.com/in/renato-zanchin-0232563a2) |
 
