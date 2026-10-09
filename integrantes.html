@@ -13,117 +13,167 @@
        integrantes.html
        DONO DESTE ARQUIVO: Gustavo Andrade
 
-       NAO MEXA no <header> nem no <footer>: eles ja estao prontos e sao
-       iguais nas 7 paginas. A unica diferenca entre as paginas e o
-       class="ativo", que marca no menu a pagina em que voce esta.
-       Seu trabalho e so o que fica dentro do <main>.
+       NAO MEXA no <header> nem no <footer>: eles sao iguais nas 7
+       paginas. A unica diferenca entre as paginas e o class="ativo",
+       que marca no menu a pagina em que voce esta.
        ===================================================================== -->
 
-  <header>
-    <a href="index.html">
-      <img src="imagens/logo-tdb.png" alt="Logotipo da Turma do Bem">
-    </a>
+  <!-- ============ CABECALHO (igual em todas as paginas) ============ -->
+  <header class="cabecalho">
+    <div class="container cabecalho-interno">
 
-    <nav>
-      <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="solucao.html">A solução</a></li>
-        <li><a href="painel.html">O painel</a></li>
-        <li><a href="integrantes.html" class="ativo">Integrantes</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="contato.html">Contato</a></li>
-      </ul>
-    </nav>
+      <a href="index.html" class="cabecalho-marca">
+        <img src="imagens/logo-tdb.png" alt="Logotipo da Turma do Bem">
+        <span class="cabecalho-nome">sorria<span>.</span></span>
+      </a>
+
+      <nav aria-label="Navegação principal">
+        <ul class="menu-lista">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="solucao.html">A solução</a></li>
+          <li><a href="painel.html">O painel</a></li>
+          <li><a href="integrantes.html" class="ativo">Integrantes</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+
+    </div>
   </header>
 
   <main>
 
-    <h1>Conheça nossa equipe</h1>
-  <p class="intro">Conheça quem faz parte do nosso grupo.</p>
- 
-  <section class="equipe">
- 
-    <article class="cards">
-      <img src="rick.png" alt="Foto de Richard Henrique Souza Santos">
-      <h2>Richard Henrique Souza Santos</h2>
-      <p><strong>RM:</strong> 576509</p>
-      <p><strong>Turma:</strong> 1TDS</p>
-      <p><strong>Função:</strong> Desenvolvedor Front-end, IA e banco de dados</p>
-      <p class="frase">Persistir é o primeiro passo para vencer.</p>
-      <p class="links">
-        <a href="https://github.com/rhenrique013" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://www.linkedin.com/in/richardhenrique1312" target="_blank" rel="noopener">LinkedIn</a>
-      </p>
-    </article>
- 
-    <article class="cards">
-      <img src="Diego.png" alt="Foto de Diego Silva">
-      <h2>Diego Silva</h2>
-      <p><strong>RM:</strong> 575925</p>
-      <p><strong>Turma:</strong> 1TDS</p>
-      <p><strong>Função:</strong> Desenvolvedor Front-end, Banco de dados e PIT</p>
-      <p class="frase">A persistência é o caminho do êxito.</p>
-      <p class="links">
-        <a href="https://github.com/Diegosilvadrs" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://www.linkedin.com/in/diego-silva-drs?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener">LinkedIn</a>
-      </p>
-    </article>
- 
-    <article class="cards">
-      <img src="gusta.png" alt="Foto de Gustavo Andrade">
-      <h2>Gustavo Andrade</h2>
-      <p><strong>RM:</strong> 575971</p>
-      <p><strong>Turma:</strong> 1TDS</p>
-      <p><strong>Função:</strong> Desenvolvedor Front-end  e Python</p>
-      <p class="frase">Acredite no processo e siga em frente.</p>
-      <p class="links">
-        <a href="https://github.com/eagu07" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://www.linkedin.com/in/gustavo-andrade-199429383?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener">LinkedIn</a>
-      </p>
-    </article>
- 
-    <article class="cards">
-      <img src="trabalho.png" alt="Foto de Gustavo Rocha">
-      <h2>Gustavo Rocha</h2>
-      <p><strong>RM:</strong> 570672</p>
-      <p><strong>Turma:</strong> 1TDS</p>
-      <p><strong>Função:</strong> Banco de Dados e Java</p>
-      <p class="frase">Grandes conquistas começam com pequenas atitudes.</p>
-      <p class="links">
-        <a href="https://github.com/gustavo-rocha-batista" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://www.linkedin.com/in/gustavo-rocha-batista" target="_blank" rel="noopener">LinkedIn</a>
-      </p>
-    </article>
- 
-    <article class="cards">
-      <img src="renato.png" alt="Foto de Renato Zanchin">
-      <h2>Renato Zanchin</h2>
-      <p><strong>RM:</strong> 576199</p>
-      <p><strong>Turma:</strong> 1TDS</p>
-      <p><strong>Função:</strong> Banco de Dados, IA e Java</p>
-      <p class="frase">Seu esforço de hoje constrói o seu amanhã.</p>
-      <p class="links">
-        <a href="https://github.com/renatozftv" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://www.linkedin.com/in/renato-zanchin-0232563a2?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener">LinkedIn</a>
-      </p>
-    </article>
- 
-    
+    <section class="topo-pagina">
+      <div class="container">
+        <p class="rotulo">Integrantes</p>
+        <h1>Conheça nossa equipe</h1>
+        <p>
+          Cinco estudantes da turma 1TDSPS da FIAP. Cada um ficou
+          responsável por uma parte do projeto.
+        </p>
+      </div>
+    </section>
 
 
-      <!-- <h1> + um card por integrante. Cada card precisa de:
-           foto (imagens/equipe/nome.jpg) · nome completo · RM · turma ·
-           funcao no grupo · 1 frase · link do GitHub · link do LinkedIn
+    <!-- ---------- CARDS: um por integrante ---------- -->
+    <section class="secao secao-branca">
+      <div class="container">
 
-           Sao 5 cards. Os mesmos dados vao para o README.md.
-           Gustavo Rocha escreve o proprio card ate 05/10.                 -->
-  </main>
+        <div class="equipe">
 
-  <footer>
-    <p>Sorria &middot; Challenge FIAP 1TDS &middot; Sprint 1 &middot; 2026</p>
-    <p>Trabalho acadêmico sem fins comerciais. A marca e os dados da
-       Turma do Bem pertencem à organização.</p>
+          <article class="card-integrante">
+            <img src="imagens/equipe/richard.png" alt="Foto de Richard Henrique dos Santos Souza">
+            <h2>Richard Henrique dos Santos Souza</h2>
+            <p><strong>RM:</strong> 576509</p>
+            <p><strong>Turma:</strong> 1TDSPS</p>
+            <p><strong>Função:</strong> Desenvolvedor Front-end, IA e Banco de Dados</p>
+            <p class="frase">Persistir é o primeiro passo para vencer.</p>
+            <p class="links">
+              <a href="https://github.com/rhenrique013" target="_blank" rel="noopener">GitHub</a>
+              <a href="https://www.linkedin.com/in/richardhenrique1312" target="_blank" rel="noopener">LinkedIn</a>
+            </p>
+          </article>
+
+          <article class="card-integrante">
+            <img src="imagens/equipe/diego.png" alt="Foto de Diego Silva">
+            <h2>Diego Silva</h2>
+            <p><strong>RM:</strong> 575925</p>
+            <p><strong>Turma:</strong> 1TDSPS</p>
+            <p><strong>Função:</strong> Desenvolvedor Front-end, Banco de Dados e Pitch</p>
+            <p class="frase">A persistência é o caminho do êxito.</p>
+            <p class="links">
+              <a href="https://github.com/Diegosilvadrs" target="_blank" rel="noopener">GitHub</a>
+              <a href="https://www.linkedin.com/in/diego-silva-drs" target="_blank" rel="noopener">LinkedIn</a>
+            </p>
+          </article>
+
+          <article class="card-integrante">
+            <img src="imagens/equipe/gustavo-andrade.png" alt="Foto de Gustavo Andrade">
+            <h2>Gustavo Andrade</h2>
+            <p><strong>RM:</strong> 575951</p>
+            <p><strong>Turma:</strong> 1TDSPS</p>
+            <p><strong>Função:</strong> Desenvolvedor Front-end e Python</p>
+            <p class="frase">Acredite no processo e siga em frente.</p>
+            <p class="links">
+              <a href="https://github.com/eagu07" target="_blank" rel="noopener">GitHub</a>
+              <a href="https://www.linkedin.com/in/gustavo-andrade-199429383" target="_blank" rel="noopener">LinkedIn</a>
+            </p>
+          </article>
+
+          <article class="card-integrante">
+            <img src="imagens/equipe/gustavo-rocha.png" alt="Foto de Gustavo Rocha Batista">
+            <h2>Gustavo Rocha Batista</h2>
+            <p><strong>RM:</strong> 570672</p>
+            <p><strong>Turma:</strong> 1TDSPS</p>
+            <p><strong>Função:</strong> Banco de Dados e Java</p>
+            <p class="frase">Grandes conquistas começam com pequenas atitudes.</p>
+            <p class="links">
+              <a href="https://github.com/gustavo-rocha-batista" target="_blank" rel="noopener">GitHub</a>
+              <a href="https://www.linkedin.com/in/gustavo-rocha-batista" target="_blank" rel="noopener">LinkedIn</a>
+            </p>
+          </article>
+
+          <article class="card-integrante">
+            <img src="imagens/equipe/renato.png" alt="Foto de Renato Zanchin">
+            <h2>Renato Zanchin</h2>
+            <p><strong>RM:</strong> 576199</p>
+            <p><strong>Turma:</strong> 1TDSPS</p>
+            <p><strong>Função:</strong> Banco de Dados, IA e Java</p>
+            <p class="frase">Seu esforço de hoje constrói o seu amanhã.</p>
+            <p class="links">
+              <a href="https://github.com/renatozftv" target="_blank" rel="noopener">GitHub</a>
+              <a href="https://www.linkedin.com/in/renato-zanchin-0232563a2" target="_blank" rel="noopener">LinkedIn</a>
+            </p>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+</main>
+
+  <!-- ============ RODAPE (igual em todas as paginas) ============ -->
+  <footer class="rodape">
+    <div class="container">
+
+      <div class="rodape-topo">
+
+        <div>
+          <p class="rodape-titulo">O projeto</p>
+          <p>Sorria é a plataforma de captação e relacionamento
+             desenhada para a ONG Turma do Bem.</p>
+          <p>Challenge FIAP · 1TDSPS · Sprint 1 · 2026.</p>
+        </div>
+
+        <div>
+          <p class="rodape-titulo">Navegação</p>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="solucao.html">A solução</a></li>
+            <li><a href="painel.html">O painel</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="rodape-titulo">A equipe</p>
+          <ul>
+            <li><a href="integrantes.html">Integrantes</a></li>
+            <li><a href="faq.html">Perguntas frequentes</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="https://github.com/rhenrique013/challenge-turma-do-bem" target="_blank" rel="noopener">Repositório no GitHub</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <p class="rodape-base">
+        Trabalho acadêmico sem fins comerciais. A marca e os dados da
+        Turma do Bem pertencem à organização.
+      </p>
+
+    </div>
   </footer>
 
 </body>

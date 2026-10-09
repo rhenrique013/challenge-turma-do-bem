@@ -13,32 +13,36 @@
        faq.html
        DONO DESTE ARQUIVO: Gustavo Andrade
 
-       NAO MEXA no <header> nem no <footer>: eles ja estao prontos e sao
-       iguais nas 7 paginas. A unica diferenca entre as paginas e o
-       class="ativo", que marca no menu a pagina em que voce esta.
-       Seu trabalho e so o que fica dentro do <main>.
+       NAO MEXA no <header> nem no <footer>: eles sao iguais nas 7
+       paginas. A unica diferenca entre as paginas e o class="ativo",
+       que marca no menu a pagina em que voce esta.
        ===================================================================== -->
 
-  <header>
-    <a href="index.html">
-      <img src="imagens/logo-tdb.png" alt="Logotipo da Turma do Bem">
-    </a>
+  <!-- ============ CABECALHO (igual em todas as paginas) ============ -->
+  <header class="cabecalho">
+    <div class="container cabecalho-interno">
 
-    <nav>
-      <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="solucao.html">A solução</a></li>
-        <li><a href="painel.html">O painel</a></li>
-        <li><a href="integrantes.html">Integrantes</a></li>
-        <li><a href="faq.html" class="ativo">FAQ</a></li>
-        <li><a href="contato.html">Contato</a></li>
-      </ul>
-    </nav>
+      <a href="index.html" class="cabecalho-marca">
+        <img src="imagens/logo-tdb.png" alt="Logotipo da Turma do Bem">
+        <span class="cabecalho-nome">sorria<span>.</span></span>
+      </a>
+
+      <nav aria-label="Navegação principal">
+        <ul class="menu-lista">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="solucao.html">A solução</a></li>
+          <li><a href="painel.html">O painel</a></li>
+          <li><a href="integrantes.html">Integrantes</a></li>
+          <li><a href="faq.html" class="ativo">FAQ</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+
+    </div>
   </header>
 
   <main>
-
 
     <section class="topo-pagina">
       <div class="container">
@@ -46,94 +50,97 @@
         <h1>Dúvidas comuns</h1>
         <p>
           O primeiro bloco é sobre o projeto que a equipe desenvolve.
-          O segundo é sobre a Turma do Bem — e é a mesma base de
-          respostas usada pelo assistente virtual do site.
+          O segundo é sobre a Turma do Bem, com as mesmas respostas que
+          o assistente virtual vai dar.
         </p>
       </div>
     </section>
 
 
-    <!-------Bloco 1--------->
+    <!-- ---------- BLOCO 1: SOBRE A SOLUCAO ---------- -->
     <section class="secao secao-branca">
       <div class="container">
 
         <div class="secao-cabecalho">
           <p class="rotulo">Bloco 1</p>
-          <h2 class="titulo">Sobre a solução</h2>
+          <h2>Sobre a solução</h2>
         </div>
 
-         <details class="faq-item" open>
-          <summary>O que é o Sorria?</summary>
-          <p class="faq-resposta">Uma plataforma para a Turma do Bem organizar num lugar só quem doa, quem atende como voluntário e quem é atendido. Hoje essa informação está espalhada entre sistemas e planilhas.</p>
-        </details>
+        <div class="faq-lista">
 
-        <details class="faq-item">
-          <summary>Que problema ele resolve?</summary>
-          <p class="faq-resposta">A perda de histórico. Sem cadastro único, quem doou no ano passado não é reconhecido neste, cada campanha recomeça do zero e a prestação de contas vira trabalho manual.</p>
-        </details>
+          <details class="faq-item" open>
+            <summary>O que é o Sorria?</summary>
+            <p class="faq-resposta">Uma plataforma para a Turma do Bem organizar num lugar só quem doa, quem atende como voluntário e quem é atendido. Hoje essa informação está espalhada entre sistemas e planilhas.</p>
+          </details>
 
-        <details class="faq-item">
-          <summary>A organização precisa abandonar os sistemas que já usa?</summary>
-          <p class="faq-resposta">Não. A proposta é conviver com eles: os dados continuam nascendo onde nascem hoje e são espelhados para a base única.</p>
-        </details>
+          <details class="faq-item">
+            <summary>Que problema ele resolve?</summary>
+            <p class="faq-resposta">A perda de histórico. Sem cadastro único, quem doou no ano passado não é reconhecido neste, cada campanha recomeça do zero e a prestação de contas vira trabalho manual.</p>
+          </details>
 
-        <details class="faq-item">
-          <summary>O que está pronto nesta primeira entrega?</summary>
-          <p class="faq-resposta">O site em HTML e CSS, o modelo de dados, os cadastros em Python e a base do assistente virtual. O sistema funcionando de ponta a ponta é o objetivo da quarta sprint.</p>
-        </details>
+          <details class="faq-item">
+            <summary>A organização precisa abandonar os sistemas que já usa?</summary>
+            <p class="faq-resposta">Não. A proposta é conviver com eles: os dados continuam nascendo onde nascem hoje e são copiados para a base única.</p>
+          </details>
 
-        <details class="faq-item">
-          <summary>Como os dados das pessoas são tratados?</summary>
-          <p class="faq-resposta">O projeto prevê registro de consentimento por finalidade, para atender à LGPD. É um dos pontos ainda em estudo pela equipe.</p>
-        </details>
+          <details class="faq-item">
+            <summary>O que está pronto nesta primeira entrega?</summary>
+            <p class="faq-resposta">O site em HTML e CSS, o modelo de dados, os cadastros em Python e a base do assistente virtual. O sistema funcionando de ponta a ponta é o objetivo da quarta sprint.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Como os dados das pessoas são tratados?</summary>
+            <p class="faq-resposta">O projeto prevê registro de consentimento por finalidade, para atender à LGPD. É um dos pontos ainda em estudo pela equipe.</p>
+          </details>
+
+        </div>
 
       </div>
     </section>
 
 
-<!-- ---------- BLOCO 2 ---------- -->
-
+    <!-- ---------- BLOCO 2: SOBRE A TURMA DO BEM ---------- -->
     <section class="secao">
       <div class="container">
 
         <div class="secao-cabecalho">
           <p class="rotulo">Bloco 2</p>
           <h2>Sobre a Turma do Bem</h2>
-          <p class="texto-apoio">
-            Estas são as perguntas que o assistente virtual precisa saber
-            responder. Escrever bem aqui adianta a entrega do chatbot.
-          </p>
         </div>
 
-        <details class="faq-item" open>
-          <summary>Como faço para doar?</summary>
-          <p class="faq-resposta">Pelo site da Turma do Bem, com valor único ou mensal. Também é possível doar sem gastar nada, cadastrando o CPF da organização na Nota Fiscal Paulista.</p>
-        </details>
+        <div class="faq-lista">
 
-        <details class="faq-item">
-          <summary>O que é doar pela Nota Fiscal Paulista?</summary>
-          <p class="faq-resposta">Você pede a nota com CPF nas compras e destina os créditos acumulados para a organização. Não custa nada e o dinheiro vem do programa do estado.</p>
-        </details>
+          <details class="faq-item" open>
+            <summary>Como faço para doar?</summary>
+            <p class="faq-resposta">Pelo site da Turma do Bem, com valor único ou mensal. Também dá para doar sem gastar nada, pela Nota Fiscal Paulista.</p>
+          </details>
 
-        <details class="faq-item">
-          <summary>Quem pode ser atendido?</summary>
-          <p class="faq-resposta">Jovens de 11 a 17 anos em situação de vulnerabilidade social, encaminhados por escolas e instituições parceiras.</p>
-        </details>
+          <details class="faq-item">
+            <summary>O que é doar pela Nota Fiscal Paulista?</summary>
+            <p class="faq-resposta">No site da Nota Fiscal Paulista, você ativa a doação automática e escolhe a Turma do Bem. A partir daí, toda compra com CPF na nota ajuda a organização, sem custo para você.</p>
+          </details>
 
-        <details class="faq-item">
-          <summary>Sou dentista. Como viro voluntário?</summary>
-          <p class="faq-resposta">Pelo cadastro de voluntários, informando CRO, cidade de atendimento e quantas vagas consegue abrir por mês na própria clínica.</p>
-        </details>
+          <details class="faq-item">
+            <summary>Quem pode ser atendido?</summary>
+            <p class="faq-resposta">Jovens de 11 a 17 anos em situação de vulnerabilidade social, encaminhados por escolas e instituições parceiras.</p>
+          </details>
 
-        <details class="faq-item">
-          <summary>Minha empresa pode apoiar?</summary>
-          <p class="faq-resposta">Sim, por patrocínio de campanha, doação recorrente ou engajamento dos funcionários na Nota Fiscal Paulista.</p>
-        </details>
+          <details class="faq-item">
+            <summary>Sou dentista. Como viro voluntário?</summary>
+            <p class="faq-resposta">Pelo cadastro de voluntários, informando CRO, cidade de atendimento e quantas vagas consegue abrir na própria clínica.</p>
+          </details>
 
-        <details class="faq-item">
-          <summary>Para onde vai o dinheiro doado?</summary>
-          <p class="faq-resposta">A organização publica prestação de contas desde 2006 e relatórios de atividades anuais, abertos a qualquer pessoa.</p>
-        </details>
+          <details class="faq-item">
+            <summary>Minha empresa pode apoiar?</summary>
+            <p class="faq-resposta">Sim, por patrocínio de campanha, doação recorrente ou engajamento dos funcionários na Nota Fiscal Paulista.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Para onde vai o dinheiro doado?</summary>
+            <p class="faq-resposta">A organização publica prestação de contas desde 2006 e relatórios de atividades anuais, abertos a qualquer pessoa.</p>
+          </details>
+
+        </div>
 
         <div class="cartao espaco-acima">
           <h3>Não achou o que procurava?</h3>
@@ -146,13 +153,49 @@
       </div>
     </section>
 
+</main>
 
-  </main>
+  <!-- ============ RODAPE (igual em todas as paginas) ============ -->
+  <footer class="rodape">
+    <div class="container">
 
-  <footer>
-    <p>Sorria &middot; Challenge FIAP 1TDS &middot; Sprint 1 &middot; 2026</p>
-    <p>Trabalho acadêmico sem fins comerciais. A marca e os dados da
-       Turma do Bem pertencem à organização.</p>
+      <div class="rodape-topo">
+
+        <div>
+          <p class="rodape-titulo">O projeto</p>
+          <p>Sorria é a plataforma de captação e relacionamento
+             desenhada para a ONG Turma do Bem.</p>
+          <p>Challenge FIAP · 1TDSPS · Sprint 1 · 2026.</p>
+        </div>
+
+        <div>
+          <p class="rodape-titulo">Navegação</p>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="solucao.html">A solução</a></li>
+            <li><a href="painel.html">O painel</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="rodape-titulo">A equipe</p>
+          <ul>
+            <li><a href="integrantes.html">Integrantes</a></li>
+            <li><a href="faq.html">Perguntas frequentes</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="https://github.com/rhenrique013/challenge-turma-do-bem" target="_blank" rel="noopener">Repositório no GitHub</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <p class="rodape-base">
+        Trabalho acadêmico sem fins comerciais. A marca e os dados da
+        Turma do Bem pertencem à organização.
+      </p>
+
+    </div>
   </footer>
 
 </body>
