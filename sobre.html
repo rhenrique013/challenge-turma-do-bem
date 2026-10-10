@@ -13,44 +13,302 @@
        sobre.html
        DONO DESTE ARQUIVO: Diego
 
-       NAO MEXA no <header> nem no <footer>: eles ja estao prontos e sao
-       iguais nas 7 paginas. A unica diferenca entre as paginas e o
-       class="ativo", que marca no menu a pagina em que voce esta.
-       Seu trabalho e so o que fica dentro do <main>.
+       NAO MEXA no <header> nem no <footer>: eles sao iguais nas 7
+       paginas. A unica diferenca entre as paginas e o class="ativo",
+       que marca no menu a pagina em que voce esta.
        ===================================================================== -->
 
-  <header>
-    <a href="index.html">
-      <img src="imagens/logo-tdb.png" alt="Logotipo da Turma do Bem">
-    </a>
+  <!-- ============ CABECALHO (igual em todas as paginas) ============ -->
+  <header class="cabecalho">
+    <div class="container cabecalho-interno">
 
-    <nav>
-      <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="sobre.html" class="ativo">Sobre</a></li>
-        <li><a href="solucao.html">A solução</a></li>
-        <li><a href="painel.html">O painel</a></li>
-        <li><a href="integrantes.html">Integrantes</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="contato.html">Contato</a></li>
-      </ul>
-    </nav>
+      <a href="index.html" class="cabecalho-marca">
+        <img src="imagens/logo-tdb.png" alt="Logotipo da Turma do Bem">
+        <span class="cabecalho-nome">sorria<span>.</span></span>
+      </a>
+
+      <nav aria-label="Navegação principal">
+        <ul class="menu-lista">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html" class="ativo">Sobre</a></li>
+          <li><a href="solucao.html">A solução</a></li>
+          <li><a href="painel.html">O painel</a></li>
+          <li><a href="integrantes.html">Integrantes</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+
+    </div>
   </header>
 
   <main>
-      <!-- 1. <h1> + paragrafo de abertura                                 -->
 
-      <!-- 2. O PROBLEMA: cada afirmacao com numero E fonte                -->
+    <!-- ---------- TOPO DA PAGINA ---------- -->
+    <section class="topo-pagina">
+      <div class="container">
+        <p class="rotulo">Sobre o projeto</p>
+        <h1>O contexto, a proposta e para onde vamos</h1>
+        <p>
+          O que a equipe entendeu do problema, o que decidiu construir, com o
+          que está construindo e em que ordem.
+        </p>
+      </div>
+    </section>
 
-      <!-- 3. TABELA <table>: uma linha por decisao, coluna "por que"      -->
 
-      <!-- 4. FECHAMENTO: o que a solucao muda                             -->
-  </main>
+    <!-- ---------- 1. CONTEXTO: texto de um lado, numeros do outro ---------- -->
+    <section class="secao secao-branca">
+      <div class="container">
 
-  <footer>
-    <p>Sorria &middot; Challenge FIAP 1TDS &middot; Sprint 1 &middot; 2026</p>
-    <p>Trabalho acadêmico sem fins comerciais. A marca e os dados da
-       Turma do Bem pertencem à organização.</p>
+        <div class="secao-cabecalho">
+          <p class="rotulo">1. Contexto</p>
+          <h2>O problema que estamos resolvendo</h2>
+        </div>
+
+        <div class="grade-2 contexto-colunas">
+
+          <div>
+            <p>A Turma do Bem conecta dentistas voluntários a jovens de 11 a 17
+               anos em situação de vulnerabilidade. Em mais de vinte anos de
+               operação, formou uma rede nacional e publica prestação de contas
+               desde 2006.</p>
+            <p>O gargalo não é falta de gente disposta a ajudar: é a informação
+               sobre essa gente. Doador, dentista voluntário, empresa parceira e
+               beneficiário entram por canais diferentes e não se encontram em
+               lugar nenhum.</p>
+            <p>Sem histórico unificado, cada nova campanha recomeça do zero, o
+               doador antigo não é lembrado e a prestação de contas vira
+               trabalho manual.</p>
+          </div>
+
+          <!-- numeros em grade 2x2, cada um com a fonte embaixo -->
+          <div class="grade-2">
+            <article class="cartao cartao-limao">
+              <p class="numero-grande">+90 mil</p>
+              <p>jovens atendidos</p>
+              <hr class="cartao-linha">
+              <p class="texto-pequeno">Fonte: turmadobem.org.br</p>
+            </article>
+            <article class="cartao cartao-limao">
+              <p class="numero-grande">+18 mil</p>
+              <p>dentistas voluntários</p>
+              <hr class="cartao-linha">
+              <p class="texto-pequeno">Fonte: turmadobem.org.br</p>
+            </article>
+            <article class="cartao cartao-limao">
+              <p class="numero-grande">+1,2 mil</p>
+              <p>mulheres atendidas</p>
+              <hr class="cartao-linha">
+              <p class="texto-pequeno">Fonte: turmadobem.org.br</p>
+            </article>
+            <article class="cartao cartao-limao">
+              <p class="numero-grande">2006</p>
+              <p>primeiro relatório público</p>
+              <hr class="cartao-linha">
+              <p class="texto-pequeno">Fonte: turmadobem.org.br</p>
+            </article>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ---------- 2. SOLUCAO PROPOSTA: tabela hoje x com o Sorria ---------- -->
+    <section class="secao">
+      <div class="container">
+
+        <div class="secao-cabecalho">
+          <p class="rotulo">2. Solução proposta</p>
+          <h2>Uma base única no lugar de quatro listas</h2>
+          <p class="texto-apoio">O que muda na rotina da organização.</p>
+        </div>
+
+        <table class="tabela">
+          <thead>
+            <tr>
+              <th>Situação</th>
+              <th>Hoje</th>
+              <th>Com o Sorria</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Chega uma doação</strong></td>
+              <td>Registro no sistema de pagamento; o nome não vai para lugar nenhum.</td>
+              <td>Vira ou atualiza um cadastro na base de doadores.</td>
+            </tr>
+            <tr>
+              <td><strong>Começa uma campanha</strong></td>
+              <td>Lista montada à mão a partir de planilhas antigas.</td>
+              <td>Recorte da própria base, por canal, valor ou data.</td>
+            </tr>
+            <tr>
+              <td><strong>Um dentista se oferece</strong></td>
+              <td>Formulário cai num e-mail e espera alguém responder.</td>
+              <td>Entra na fila de voluntários com região e disponibilidade.</td>
+            </tr>
+            <tr>
+              <td><strong>Fecha o ano</strong></td>
+              <td>Consolidação manual para a prestação de contas.</td>
+              <td>Indicadores já somados no painel.</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+    </section>
+
+
+    <!-- ---------- 3. TECNOLOGIAS ---------- -->
+    <section class="secao secao-branca">
+      <div class="container">
+
+        <div class="secao-cabecalho">
+          <p class="rotulo">3. Tecnologias</p>
+          <h2>O que usamos e por quê</h2>
+          <p class="texto-apoio">Nesta sprint, o site é construído apenas com HTML e CSS.</p>
+        </div>
+
+        <table class="tabela">
+          <thead>
+            <tr>
+              <th>Tecnologia</th>
+              <th>Onde entra</th>
+              <th>Por que essa</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>HTML5</strong></td>
+              <td>Estrutura das sete páginas do site</td>
+              <td>Tags semânticas deixam o conteúdo legível para leitor de tela e para buscador.</td>
+            </tr>
+            <tr>
+              <td><strong>CSS3</strong></td>
+              <td>Todo o visual, layout e os dois tamanhos de tela</td>
+              <td>Grid e Flexbox resolvem o layout sem framework, que é proibido nesta sprint.</td>
+            </tr>
+            <tr>
+              <td><strong>Python</strong></td>
+              <td>Cadastros de doador, dentista voluntário e beneficiário</td>
+              <td>É a linguagem da disciplina e resolve a lógica sem precisar de banco ainda.</td>
+            </tr>
+            <tr>
+              <td><strong>IBM watsonx Assistant</strong></td>
+              <td>Atendimento automático no site</td>
+              <td>Monta intenções e entidades sem escrever código, e guarda o contexto da conversa.</td>
+            </tr>
+            <tr>
+              <td><strong>Oracle Data Modeler</strong></td>
+              <td>Modelo de dados da plataforma</td>
+              <td>Ferramenta exigida pela disciplina de banco de dados.</td>
+            </tr>
+            <tr>
+              <td><strong>Git e GitHub</strong></td>
+              <td>Histórico do projeto e trabalho em equipe</td>
+              <td>Cinco pessoas mexendo nos mesmos arquivos sem sobrescrever o trabalho uma da outra.</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+    </section>
+
+
+    <!-- ---------- 4. ROADMAP: as quatro sprints ---------- -->
+    <section class="secao">
+      <div class="container">
+
+        <div class="secao-cabecalho">
+          <p class="rotulo">4. Roadmap</p>
+          <h2>Quatro sprints, uma evolução visível</h2>
+          <p class="texto-apoio">
+            A decisão da equipe foi não entregar tudo de uma vez. Cada sprint
+            precisa mostrar um salto em relação à anterior.
+          </p>
+        </div>
+
+        <div class="grade-4">
+
+          <article class="cartao">
+            <p class="passo-numero">1</p>
+            <h3>Estrutura</h3>
+            <p>Site estático em HTML e CSS, modelo de dados e os cadastros
+               básicos. É onde estamos.</p>
+          </article>
+
+          <article class="cartao">
+            <p class="passo-numero">2</p>
+            <h3>Movimento</h3>
+            <p>JavaScript, responsividade e as telas que ficaram de fora da
+               primeira entrega.</p>
+          </article>
+
+          <article class="cartao">
+            <p class="passo-numero">3</p>
+            <h3>Estratégia</h3>
+            <p>Mapa do site, fluxos de navegação e personas por trás de cada
+               decisão de tela.</p>
+          </article>
+
+          <article class="cartao">
+            <p class="passo-numero">4</p>
+            <h3>Plataforma</h3>
+            <p>Integração entre as partes e a solução completa funcionando de
+               ponta a ponta.</p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+</main>
+
+  <!-- ============ RODAPE (igual em todas as paginas) ============ -->
+  <footer class="rodape">
+    <div class="container">
+
+      <div class="rodape-topo">
+
+        <div>
+          <p class="rodape-titulo">O projeto</p>
+          <p>Sorria é a plataforma de captação e relacionamento
+             desenhada para a ONG Turma do Bem.</p>
+          <p>Challenge FIAP · 1TDSPS · Sprint 1 · 2026.</p>
+        </div>
+
+        <div>
+          <p class="rodape-titulo">Navegação</p>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="solucao.html">A solução</a></li>
+            <li><a href="painel.html">O painel</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="rodape-titulo">A equipe</p>
+          <ul>
+            <li><a href="integrantes.html">Integrantes</a></li>
+            <li><a href="faq.html">Perguntas frequentes</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="https://github.com/rhenrique013/challenge-turma-do-bem" target="_blank" rel="noopener">Repositório no GitHub</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <p class="rodape-base">
+        Trabalho acadêmico sem fins comerciais. A marca e os dados da
+        Turma do Bem pertencem à organização.
+      </p>
+
+    </div>
   </footer>
 
 </body>

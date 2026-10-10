@@ -7,14 +7,82 @@
 
    ATENCAO: so o dono edita este arquivo. Precisa de uma cor
    nova ou de um ajuste? Pede no grupo - nao edita aqui.
+
+   Cores, botoes, cartoes, grades e tabela ja vem do style.css.
+   Aqui fica so o que e especifico da pagina inicial e do sobre.
    ========================================================= */
 
+
 /* 1. HERO - o bloco grande da pagina inicial */
+.hero {
+  background-color: var(--branco);
+  border-bottom: 1px solid var(--linha);
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.hero h1 {
+  max-width: 760px;
+  margin-bottom: 16px;
+}
+
+/* fundo limao atras das palavras "vida inteira" */
+.destaque {
+  background-color: var(--limao);
+  padding: 0 8px;
+}
+
+.hero-texto {
+  font-size: 18px;
+  max-width: 620px;
+}
+
 
 /* 2. NUMEROS - os blocos de dado com fonte embaixo */
 
-/* 3. CARDS DA SOLUCAO - os 3 da pagina inicial */
+/* linha fina que separa o numero da fonte */
+.cartao-linha {
+  border: none;
+  border-top: 1px solid var(--linha);
+  margin: 20px 0 12px;
+}
 
-/* 4. TABELA DO SOBRE */
+
+/* 3. CARDS DA SOLUCAO E IMAGEM DO PAINEL */
+
+/* print do esboco do painel, ocupando a largura toda */
+.painel-imagem {
+  width: 100%;
+  border: 1px solid var(--linha);
+  border-radius: 4px;
+}
+
+/* bloco "Quem esta por tras", com mais respiro que um cartao comum */
+.chamada {
+  padding: 48px;
+}
+
+
+/* 4. SOBRE - contexto em duas colunas */
+.contexto-colunas {
+  gap: 48px;
+  align-items: start;
+}
+
 
 /* 5. MEDIA QUERIES desta pagina - no fim do arquivo */
+
+/* --- Laptops e desktops: 992px ou mais --- */
+@media (min-width: 992px) {
+  .hero {
+    padding-top: 110px;
+    padding-bottom: 110px;
+  }
+}
+
+/* --- Telas grandes: 1300px ou mais --- */
+@media (min-width: 1300px) {
+  .hero-texto {
+    font-size: 20px;
+  }
+}
