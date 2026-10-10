@@ -11,50 +11,232 @@
 
   <!-- =====================================================================
        index.html
-       DONO DESTE ARQUIVO: Diego.
+       DONO DESTE ARQUIVO: Diego
 
-       NAO MEXA no <header> nem no <footer>: eles ja estao prontos e sao
-       iguais nas 7 paginas. A unica diferenca entre as paginas e o
-       class="ativo", que marca no menu a pagina em que voce esta.
-       Seu trabalho e so o que fica dentro do <main>.
+       NAO MEXA no <header> nem no <footer>: eles sao iguais nas 7
+       paginas. A unica diferenca entre as paginas e o class="ativo",
+       que marca no menu a pagina em que voce esta.
        ===================================================================== -->
 
-  <header>
-    <a href="index.html">
-      <img src="imagens/logo-tdb.png" alt="Logotipo da Turma do Bem">
-    </a>
+  <!-- ============ CABECALHO (igual em todas as paginas) ============ -->
+  <header class="cabecalho">
+    <div class="container cabecalho-interno">
 
-    <nav>
-      <ul>
-        <li><a href="index.html" class="ativo">Início</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="solucao.html">A solução</a></li>
-        <li><a href="painel.html">O painel</a></li>
-        <li><a href="integrantes.html">Integrantes</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="contato.html">Contato</a></li>
-      </ul>
-    </nav>
+      <a href="index.html" class="cabecalho-marca">
+        <img src="imagens/logo-tdb.png" alt="Logotipo da Turma do Bem">
+        <span class="cabecalho-nome">sorria<span>.</span></span>
+      </a>
+
+      <nav aria-label="Navegação principal">
+        <ul class="menu-lista">
+          <li><a href="index.html" class="ativo">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="solucao.html">A solução</a></li>
+          <li><a href="painel.html">O painel</a></li>
+          <li><a href="integrantes.html">Integrantes</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+
+    </div>
   </header>
 
   <main>
-      <!-- 1. HERO: um <h1> com a frase principal + um paragrafo curto
-           + um link que leva para solucao.html                           -->
+    <!-- busquei manter um HTML semantico: o main diz que este e o conteudo
+         principal da pagina, e cada section avisa ao navegador que ali comeca
+         uma secao de conteudo (diferente da div, que e so uma caixa) -->
 
-      <!-- 2. O PROBLEMA EM NUMEROS: 3 blocos, cada um com o numero
-           grande e a fonte embaixo (todo numero precisa de fonte)         -->
 
-      <!-- 3. A SOLUCAO EM 3 CARDS: titulo + 2 linhas cada                 -->
+    <!-- ---------- 1. HERO ---------- -->
+    <section class="hero">
+      <div class="container">
+        <p class="rotulo">Challenge FIAP · 1TDSPS · Sprint 1</p>
 
-      <!-- 4. PROVA: um numero ou depoimento que mostre que funciona       -->
+        <h1>Quem doa uma vez<br> pode doar a <span class="destaque">vida inteira</span>.</h1>
 
-      <!-- 5. BLOCO QUEM SOMOS: 2 linhas + link para sobre.html            -->
-  </main>
+        <p class="hero-texto">
+          O Sorria organiza a captação e o relacionamento da Turma do Bem
+          num lugar só, para que nenhum doador, dentista voluntário ou
+          empresa parceira se perca no caminho.
+        </p>
 
-  <footer>
-    <p>Sorria &middot; Challenge FIAP 1TDS &middot; Sprint 1 &middot; 2026</p>
-    <p>Trabalho acadêmico sem fins comerciais. A marca e os dados da
-       Turma do Bem pertencem à organização.</p>
+        <div class="area-botoes">
+          <a href="solucao.html" class="botao botao-laranja">Ver a solução</a>
+          <a href="sobre.html" class="botao botao-branco">Sobre o projeto</a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ---------- 2. O PROBLEMA EM NUMEROS ---------- -->
+    <section class="secao secao-branca">
+      <div class="container">
+
+        <div class="secao-cabecalho">
+          <p class="rotulo">O problema em números</p>
+          <h2>Uma operação grande demais para planilha</h2>
+          <p class="texto-apoio">
+            A Turma do Bem conecta dentistas voluntários a jovens que precisam
+            de tratamento. O alcance cresceu, mas o cadastro de quem doa, de
+            quem atende e de quem é atendido está espalhado entre sistemas,
+            planilhas e formulários.
+          </p>
+        </div>
+
+        <!-- todo numero tem a fonte embaixo -->
+        <div class="grade-3">
+
+          <article class="cartao cartao-limao">
+            <p class="numero-grande">+90 mil</p>
+            <p>jovens de 11 a 17 anos já atendidos</p>
+            <hr class="cartao-linha">
+            <p class="texto-pequeno">Fonte: site oficial da Turma do Bem</p>
+          </article>
+
+          <article class="cartao cartao-limao">
+            <p class="numero-grande">+18 mil</p>
+            <p>dentistas voluntários cadastrados</p>
+            <hr class="cartao-linha">
+            <p class="texto-pequeno">Fonte: site oficial da Turma do Bem</p>
+          </article>
+
+          <article class="cartao cartao-limao">
+            <p class="numero-grande">19 anos</p>
+            <p>de prestação de contas publicada</p>
+            <hr class="cartao-linha">
+            <p class="texto-pequeno">Fonte: relatórios de 2006 a 2024</p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ---------- 3. A SOLUCAO EM 3 CARDS ---------- -->
+    <section class="secao">
+      <div class="container">
+
+        <div class="secao-cabecalho">
+          <p class="rotulo">A solução</p>
+          <h2>Três frentes, uma base de dados só</h2>
+        </div>
+
+        <div class="grade-3">
+
+          <article class="cartao">
+            <h3>1. Captação</h3>
+            <p>Cada pessoa que chega pelo site, pelo formulário ou pela Nota
+               Fiscal Paulista vira um cadastro único, e não um e-mail
+               perdido na caixa de entrada.</p>
+          </article>
+
+          <article class="cartao">
+            <h3>2. Relacionamento</h3>
+            <p>Histórico completo de cada doador: o que doou, quando, por qual
+               canal e o que recebeu de volta. É o que transforma doação
+               única em doação recorrente.</p>
+          </article>
+
+          <article class="cartao">
+            <h3>3. Transparência</h3>
+            <p>Indicadores prontos para a prestação de contas, no lugar de
+               fechar planilha à mão no fim do ano.</p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ---------- 4. PROVA: COMO ISSO APARECE NA TELA ---------- -->
+    <section class="secao secao-branca">
+      <div class="container">
+
+        <div class="secao-cabecalho">
+          <p class="rotulo">Como isso aparece na tela</p>
+          <h2>A estrutura do painel</h2>
+          <p class="texto-apoio">
+            Este é o esboço da ferramenta nesta primeira sprint: a organização
+            das áreas, ainda sem o acabamento visual. O desenho evolui a cada
+            entrega.
+          </p>
+        </div>
+
+        <img src="imagens/painel.png" class="painel-imagem"
+             alt="Esboço do painel do Sorria, com menu lateral e indicadores de doadores, doações e dentistas">
+
+        <div class="area-botoes">
+          <a href="painel.html" class="botao botao-laranja">Ver o painel por dentro</a>
+          <a href="solucao.html" class="botao botao-branco">Entender o fluxo</a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ---------- 5. BLOCO QUEM SOMOS ---------- -->
+    <section class="secao">
+      <div class="container">
+        <div class="cartao cartao-laranja chamada">
+          <p class="rotulo">Quem está por trás</p>
+          <h2>Cinco estudantes de Análise e Desenvolvimento de Sistemas</h2>
+          <p class="texto-apoio">
+            Turma 1TDSPS da FIAP. Este site apresenta o projeto que a equipe
+            desenvolve ao longo das quatro sprints do Challenge.
+          </p>
+          <div class="area-botoes">
+            <a href="integrantes.html" class="botao botao-limao">Conhecer a equipe</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+</main>
+
+  <!-- ============ RODAPE (igual em todas as paginas) ============ -->
+  <footer class="rodape">
+    <div class="container">
+
+      <div class="rodape-topo">
+
+        <div>
+          <p class="rodape-titulo">O projeto</p>
+          <p>Sorria é a plataforma de captação e relacionamento
+             desenhada para a ONG Turma do Bem.</p>
+          <p>Challenge FIAP · 1TDSPS · Sprint 1 · 2026.</p>
+        </div>
+
+        <div>
+          <p class="rodape-titulo">Navegação</p>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="solucao.html">A solução</a></li>
+            <li><a href="painel.html">O painel</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="rodape-titulo">A equipe</p>
+          <ul>
+            <li><a href="integrantes.html">Integrantes</a></li>
+            <li><a href="faq.html">Perguntas frequentes</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="https://github.com/rhenrique013/challenge-turma-do-bem" target="_blank" rel="noopener">Repositório no GitHub</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <p class="rodape-base">
+        Trabalho acadêmico sem fins comerciais. A marca e os dados da
+        Turma do Bem pertencem à organização.
+      </p>
+
+    </div>
   </footer>
 
 </body>
