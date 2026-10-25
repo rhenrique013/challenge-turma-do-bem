@@ -1,12 +1,8 @@
 /* =========================================================
-   CHALLENGE TURMA DO BEM - SPRINT 1
+   CHALLENGE TURMA DO BEM - SPRINT 2
    equipe.css
 
-   DONO DESTE ARQUIVO: Gustavo Andrade
    Usado por: integrantes.html e faq.html
-
-   ATENCAO: so o dono edita este arquivo. Precisa de uma cor
-   nova ou de um ajuste? Pede no grupo - nao edita aqui.
 
    As cores vem das variaveis do style.css, por isso aqui
    aparece var(--branco), var(--linha) etc.
@@ -94,7 +90,7 @@
 }
 
 .faq-item summary {
-  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-family: var(--fonte-titulo);
   font-weight: bold;
   color: var(--preto);
   cursor: pointer;
