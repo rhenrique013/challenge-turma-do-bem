@@ -1,12 +1,8 @@
 /* =========================================================
-   CHALLENGE TURMA DO BEM - SPRINT 1
+   CHALLENGE TURMA DO BEM - SPRINT 2
    contato.css
 
-   DONO DESTE ARQUIVO: Gustavo Andrade
    Usado por: contato.html
-
-   ATENCAO: so o dono edita este arquivo. Precisa de uma cor
-   nova ou de um ajuste? Pede no grupo - nao edita aqui.
 
    As cores vem das variaveis do style.css, por isso aqui
    aparece var(--preto), var(--linha) etc.
@@ -29,7 +25,7 @@
 .campo label {
   display: block;
   margin-bottom: 6px;
-  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-family: var(--fonte-titulo);
   font-size: 15px;
   font-weight: bold;
   color: var(--preto);
@@ -40,7 +36,7 @@
 .campo textarea {
   width: 100%;
   padding: 12px 14px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--fonte-texto);
   font-size: 15px;
   color: var(--preto);
   background-color: var(--branco);
@@ -78,7 +74,7 @@
 
 .contato-rotulo {
   width: 90px;
-  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-family: var(--fonte-titulo);
   font-weight: bold;
   font-size: 15px;
   color: var(--preto);

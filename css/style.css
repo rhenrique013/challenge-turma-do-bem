@@ -1,12 +1,8 @@
 /* =========================================================
-   CHALLENGE TURMA DO BEM - SPRINT 1
+   CHALLENGE TURMA DO BEM - SPRINT 2
    style.css - base do site
 
-   DONO DESTE ARQUIVO: Richard
    Usado por: as 7 paginas
-
-   ATENCAO: so o dono edita este arquivo. Precisa de uma cor
-   nova ou de um ajuste? Pede no grupo - nao edita aqui.
 
    Ordem do arquivo:
    1. Variaveis        6. Topo das paginas
@@ -35,6 +31,10 @@
   --fundo: #F7F7F2;
   --linha: #E6E6DE;
   --branco: #FFFFFF;
+
+  /* fontes: escritas uma vez aqui e usadas com var(--fonte-...) */
+  --fonte-titulo: "Trebuchet MS", Arial, sans-serif;
+  --fonte-texto: Arial, Helvetica, sans-serif;
 }
 
 
@@ -50,7 +50,7 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--fonte-texto);
   font-size: 16px;
   line-height: 1.6;
   color: var(--texto);
@@ -77,7 +77,7 @@ img {
    Fonte diferente nos titulos para criar hierarquia visual.
    --------------------------------------------------------- */
 h1, h2, h3, h4 {
-  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-family: var(--fonte-titulo);
   color: var(--preto);
   line-height: 1.25;
 }
@@ -103,8 +103,8 @@ p:last-child {
 
 /* rotulo pequeno em letra maiuscula acima dos titulos */
 .rotulo {
-  font-family: "Trebuchet MS", Arial, sans-serif;
-  font-size: 12px;
+  font-family: var(--fonte-titulo);
+  font-size: 13px;
   font-weight: bold;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -211,7 +211,7 @@ p:last-child {
 }
 
 .cabecalho-nome {
-  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-family: var(--fonte-titulo);
   font-size: 19px;
   font-weight: bold;
   color: var(--preto);
@@ -253,7 +253,7 @@ p:last-child {
    --------------------------------------------------------- */
 .botao {
   display: inline-block;
-  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-family: var(--fonte-titulo);
   font-size: 15px;
   font-weight: bold;
   padding: 12px 24px;
@@ -329,7 +329,7 @@ p:last-child {
 
 /* numero grande dentro do cartao */
 .numero-grande {
-  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-family: var(--fonte-titulo);
   font-size: 38px;
   font-weight: bold;
   color: var(--preto);
@@ -365,7 +365,7 @@ p:last-child {
 
 /* titulo de cada coluna do rodape */
 .rodape-titulo {
-  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-family: var(--fonte-titulo);
   font-weight: bold;
   color: var(--branco);
   font-size: 13px;
@@ -416,7 +416,7 @@ p:last-child {
 
 .tabela thead th {
   background-color: var(--fundo);
-  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-family: var(--fonte-titulo);
   font-size: 13px;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -438,7 +438,7 @@ p:last-child {
   border-radius: 50%;
   background-color: var(--preto);
   color: var(--limao);
-  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-family: var(--fonte-titulo);
   font-size: 16px;
   font-weight: bold;
   text-align: center;
@@ -484,8 +484,8 @@ p:last-child {
 }
 
 .tela-titulo {
-  font-family: "Trebuchet MS", Arial, sans-serif;
-  font-size: 13px;
+  font-family: var(--fonte-titulo);
+  font-size: 14px;
   font-weight: bold;
   color: var(--cinza);
 }
@@ -502,7 +502,7 @@ p:last-child {
 }
 
 .tela-menu-titulo {
-  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-family: var(--fonte-titulo);
   font-weight: bold;
   color: var(--limao);
   font-size: 12px;
@@ -536,7 +536,7 @@ p:last-child {
 }
 
 .indicador-valor {
-  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-family: var(--fonte-titulo);
   font-size: 24px;
   font-weight: bold;
   color: var(--preto);
