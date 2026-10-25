@@ -629,8 +629,34 @@ p:last-child {
 /* =========================================================
    MEDIA QUERIES
    Ficam todas juntas no fim do arquivo, da menor largura
-   para a maior. Esta sprint e so desktop: 992px e 1300px.
+   para a maior. O que esta fora delas vale para o celular;
+   cada media query acrescenta o que muda em telas maiores.
    ========================================================= */
+
+/* --- Tablets: 768px ou mais --- */
+@media (min-width: 768px) {
+  h1 { font-size: 40px; }
+  h2 { font-size: 28px; }
+
+  .secao {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .grade-2 { grid-template-columns: 1fr 1fr; }
+  .grade-3 { grid-template-columns: 1fr 1fr 1fr; }
+  .grade-4 { grid-template-columns: 1fr 1fr; }
+
+  .rodape-topo { grid-template-columns: 2fr 1fr 1fr; }
+
+  .tela-corpo-menu { grid-template-columns: 190px 1fr; }
+
+  .tabela th,
+  .tabela td {
+    padding: 14px 16px;
+    font-size: 16px;
+  }
+}
 
 /* --- Laptops e desktops: 992px ou mais --- */
 @media (min-width: 992px) {
@@ -664,6 +690,8 @@ p:last-child {
 /* --- Telas grandes: 1300px ou mais --- */
 @media (min-width: 1300px) {
   h1 { font-size: 52px; }
+
+  .grade-4 { grid-template-columns: 1fr 1fr 1fr 1fr; }
 
   .container {
     max-width: 1240px;
