@@ -27,9 +27,12 @@
         <span class="cabecalho-nome">sorria<span>.</span></span>
       </a>
 
+      <!-- botao do menu: so aparece no celular e no tablet -->
+      <button class="menu-botao" id="menu-botao" aria-label="Abrir o menu" aria-expanded="false">&#9776;</button>
+
       <nav aria-label="Navegação principal">
-        <ul class="menu-lista">
-          <li><a href="index.html" class="ativo">Início</a></li>
+        <ul class="menu-lista" id="menu-lista">
+          <li><a href="index.html" class="ativo" aria-current="page">Início</a></li>
           <li><a href="sobre.html">Sobre</a></li>
           <li><a href="solucao.html">A solução</a></li>
           <li><a href="painel.html">O painel</a></li>
@@ -206,7 +209,7 @@
           <p class="rodape-titulo">O projeto</p>
           <p>Sorria é a plataforma de captação e relacionamento
              desenhada para a ONG Turma do Bem.</p>
-          <p>Challenge FIAP · 1TDSPS · Sprint 1 · 2026.</p>
+          <p>Challenge FIAP · 1TDSPS · Sprint 2 · 2026.</p>
         </div>
 
         <div>
@@ -238,6 +241,8 @@
 
     </div>
   </footer>
+
+  <script src="js/menu.js"></script>
 
 </body>
 </html>
