@@ -197,7 +197,9 @@ p:last-child {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 72px;
+  min-height: 72px;
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 
 .cabecalho-marca {
@@ -221,10 +223,33 @@ p:last-child {
   color: var(--laranja);
 }
 
-/* menu de navegacao */
+/* botao do menu (icone de 3 tracos): so no celular e no tablet */
+.menu-botao {
+  background: none;
+  border: 2px solid var(--preto);
+  border-radius: 4px;
+  padding: 4px 10px;
+  font-size: 22px;
+  line-height: 1;
+  color: var(--preto);
+  cursor: pointer;
+}
+
+/* no celular o menu ocupa a linha inteira, embaixo da marca */
+.cabecalho nav {
+  width: 100%;
+}
+
+/* menu de navegacao: no celular comeca fechado e em coluna */
 .menu-lista {
+  display: none;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+/* classe que o menu.js coloca quando o botao e clicado */
+.menu-lista.aberto {
   display: flex;
-  gap: 6px;
 }
 
 .menu-lista a {
@@ -615,6 +640,24 @@ p:last-child {
   .secao {
     padding-top: 72px;
     padding-bottom: 72px;
+  }
+
+  .indicadores { grid-template-columns: 1fr 1fr 1fr 1fr; }
+
+  /* o menu volta a ficar em linha e o botao some */
+  .cabecalho-interno {
+    flex-wrap: nowrap;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .cabecalho nav { width: auto; }
+  .menu-botao { display: none; }
+
+  .menu-lista {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    margin-top: 0;
   }
 }
 
