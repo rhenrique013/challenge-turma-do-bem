@@ -114,7 +114,7 @@ p:last-child {
 
 /* texto pequeno, usado em legendas e fontes de dados */
 .texto-pequeno {
-  font-size: 13px;
+  font-size: 14px;
   color: var(--cinza);
 }
 
@@ -408,7 +408,7 @@ p:last-child {
 
 .rodape-base {
   padding-top: 20px;
-  font-size: 13px;
+  font-size: 14px;
   color: #85857C;
 }
 
@@ -530,20 +530,29 @@ p:last-child {
   font-family: var(--fonte-titulo);
   font-weight: bold;
   color: var(--limao);
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 1px;
   text-transform: uppercase;
   margin-bottom: 14px;
 }
 
 .tela-menu li {
-  padding: 7px 0;
-  font-size: 14px;
-  color: #9E9E95;
   border-bottom: 1px solid #2A2A24;
 }
 
-.tela-menu li.ativo {
+/* Sprint 2: os itens do menu do painel viraram links para as telas */
+.tela-menu a {
+  display: block;
+  padding: 7px 0;
+  font-size: 14px;
+  color: #9E9E95;
+}
+
+.tela-menu a:hover {
+  color: var(--limao);
+}
+
+.tela-menu a.ativo {
   color: var(--branco);
   font-weight: bold;
 }
@@ -560,6 +569,12 @@ p:last-child {
   border-radius: 4px;
 }
 
+/* Sprint 2: indicador que pede atencao (ex.: fila de triagem) */
+.indicador-alerta {
+  border-left-color: var(--laranja);
+  background-color: var(--laranja-claro);
+}
+
 .indicador-valor {
   font-family: var(--fonte-titulo);
   font-size: 24px;
@@ -569,7 +584,7 @@ p:last-child {
 }
 
 .indicador-nome {
-  font-size: 12px;
+  font-size: 14px;
   color: var(--cinza);
   text-transform: uppercase;
 }

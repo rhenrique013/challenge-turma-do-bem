@@ -65,7 +65,7 @@
 
 
     <!-- ---------- TELA 1: VISAO GERAL ---------- -->
-    <section class="secao">
+    <section class="secao" id="visao-geral">
       <div class="container">
 
         <div class="secao-cabecalho">
@@ -79,21 +79,26 @@
         <div class="tela">
 
           <div class="tela-barra">
-            <div class="tela-bolinhas"><span></span><span></span><span></span></div>
+            <div class="tela-bolinhas">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
             <p class="tela-titulo">Sorria · visão geral</p>
           </div>
 
           <div class="tela-corpo-menu">
 
-            <nav class="tela-menu">
+            <!-- menu do painel: cada item leva para a tela dele nesta pagina -->
+            <nav class="tela-menu" aria-label="Menu do painel">
               <p class="tela-menu-titulo">Menu</p>
               <ul>
-                <li class="ativo">Visão geral</li>
-                <li>Doadores</li>
-                <li>Campanhas</li>
-                <li>Voluntários</li>
-                <li>Beneficiários</li>
-                <li>Relatórios</li>
+                <li><a href="#visao-geral" class="ativo">Visão geral</a></li>
+                <li><a href="#ficha-doador">Doadores</a></li>
+                <li><a href="#proximas-telas">Campanhas</a></li>
+                <li><a href="#proximas-telas">Voluntários</a></li>
+                <li><a href="#proximas-telas">Beneficiários</a></li>
+                <li><a href="#proximas-telas">Relatórios</a></li>
               </ul>
             </nav>
 
@@ -112,7 +117,7 @@
                   <p class="indicador-valor">318</p>
                   <p class="indicador-nome">Dentistas ativos</p>
                 </div>
-                <div class="indicador">
+                <div class="indicador indicador-alerta">
                   <p class="indicador-valor">74</p>
                   <p class="indicador-nome">Fila de triagem</p>
                 </div>
@@ -129,10 +134,30 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr><td>Ana Ribeiro</td><td>Site</td><td>R$ 60,00</td><td>28/09</td></tr>
-                  <tr><td>Marcos Lima</td><td>Nota Fiscal Paulista</td><td>R$ 18,40</td><td>28/09</td></tr>
-                  <tr><td>Clínica Sorriso Ltda.</td><td>Parceria</td><td>R$ 1.200,00</td><td>27/09</td></tr>
-                  <tr><td>Juliana Costa</td><td>Site</td><td>R$ 30,00</td><td>27/09</td></tr>
+                  <tr>
+                    <td>Ana Ribeiro</td>
+                    <td>Site</td>
+                    <td>R$ 60,00</td>
+                    <td>28/09</td>
+                  </tr>
+                  <tr>
+                    <td>Marcos Lima</td>
+                    <td>Nota Fiscal Paulista</td>
+                    <td>R$ 18,40</td>
+                    <td>28/09</td>
+                  </tr>
+                  <tr>
+                    <td>Clínica Sorriso Ltda.</td>
+                    <td>Parceria</td>
+                    <td>R$ 1.200,00</td>
+                    <td>27/09</td>
+                  </tr>
+                  <tr>
+                    <td>Juliana Costa</td>
+                    <td>Site</td>
+                    <td>R$ 30,00</td>
+                    <td>27/09</td>
+                  </tr>
                 </tbody>
               </table>
 
@@ -152,7 +177,7 @@
 
 
     <!-- ---------- TELA 2: FICHA DO DOADOR ---------- -->
-    <section class="secao secao-branca">
+    <section class="secao secao-branca" id="ficha-doador">
       <div class="container">
 
         <div class="secao-cabecalho">
@@ -169,7 +194,11 @@
           <div class="tela">
 
             <div class="tela-barra">
-              <div class="tela-bolinhas"><span></span><span></span><span></span></div>
+              <div class="tela-bolinhas">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
               <p class="tela-titulo">Ficha · Ana Ribeiro</p>
             </div>
 
@@ -191,10 +220,22 @@
               <h4>Linha do tempo</h4>
               <table class="tabela">
                 <tbody>
-                  <tr><td>28/09/2026</td><td>Doou R$ 60,00 pelo site</td></tr>
-                  <tr><td>12/09/2026</td><td>Abriu o e-mail da campanha</td></tr>
-                  <tr><td>28/08/2026</td><td>Doou R$ 60,00 pelo site</td></tr>
-                  <tr><td>03/2024</td><td>Primeiro cadastro</td></tr>
+                  <tr>
+                    <td>28/09/2026</td>
+                    <td>Doou R$ 60,00 pelo site</td>
+                  </tr>
+                  <tr>
+                    <td>12/09/2026</td>
+                    <td>Abriu o e-mail da campanha</td>
+                  </tr>
+                  <tr>
+                    <td>28/08/2026</td>
+                    <td>Doou R$ 60,00 pelo site</td>
+                  </tr>
+                  <tr>
+                    <td>03/2024</td>
+                    <td>Primeiro cadastro</td>
+                  </tr>
                 </tbody>
               </table>
             </div>
@@ -222,15 +263,50 @@
             </article>
 
             <article class="cartao cartao-laranja espaco-acima">
-              <h3>Próxima sprint</h3>
+              <h3>Próximas sprints</h3>
               <p>
-                Esta tela ganha filtro por período e o botão de registrar
-                contato, que ainda depende de JavaScript.
+                Esta tela ganha filtro por período e o botão de
+                registrar contato.
               </p>
             </article>
 
           </div>
 
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ---------- PROXIMAS TELAS (destino dos outros itens do menu) ---------- -->
+    <section class="secao" id="proximas-telas">
+      <div class="container">
+
+        <div class="secao-cabecalho">
+          <p class="rotulo">Próximas telas</p>
+          <h2>O que o menu ainda vai abrir</h2>
+          <p class="texto-apoio">
+            As outras áreas do menu ganham tela nas próximas sprints.
+          </p>
+        </div>
+
+        <div class="grade-4">
+          <article class="cartao cartao-limao">
+            <h3>Campanhas</h3>
+            <p>Cada campanha com meta, canal e quanto já arrecadou.</p>
+          </article>
+          <article class="cartao cartao-limao">
+            <h3>Voluntários</h3>
+            <p>Dentistas por região, com as vagas livres no mês.</p>
+          </article>
+          <article class="cartao cartao-limao">
+            <h3>Beneficiários</h3>
+            <p>Jovens na fila de triagem e em tratamento.</p>
+          </article>
+          <article class="cartao cartao-limao">
+            <h3>Relatórios</h3>
+            <p>Os números da prestação de contas, prontos para exportar.</p>
+          </article>
         </div>
 
         <div class="area-botoes">
