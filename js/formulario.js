@@ -64,3 +64,14 @@ function validarFormulario(evento) {
     formulario.reset();
   }
 }
+
+// apaga o erro do campo assim que a pessoa volta a digitar nele
+function limparAoDigitar(evento) {
+  limparErro(evento.target.id);
+}
+
+formulario.addEventListener("submit", validarFormulario);
+document.getElementById("nome").addEventListener("input", limparAoDigitar);
+document.getElementById("email").addEventListener("input", limparAoDigitar);
+document.getElementById("assunto").addEventListener("change", limparAoDigitar);
+document.getElementById("mensagem").addEventListener("input", limparAoDigitar);
