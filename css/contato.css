@@ -12,7 +12,7 @@
 /* 1. LAYOUT - formulario a esquerda, canais a direita */
 .layout-contato {
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
+  grid-template-columns: 1fr;
   gap: 40px;
 }
 
@@ -58,6 +58,26 @@
   font-size: 14px;
   color: var(--cinza);
 }
+/* campo com erro: borda vermelha (classe colocada pelo formulario.js) */
+.campo .campo-erro {
+  border: 2px solid #C62828;
+}
+
+/* mensagem de erro embaixo do campo */
+.erro-texto {
+  display: block;
+  margin-top: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #C62828;
+}
+
+/* aviso de mensagem enviada */
+.form-aviso {
+  margin-top: 16px;
+  font-weight: bold;
+  color: #2E7D32;
+}
 
 
 /* 3. CANAIS DE CONTATO E ENDERECO */
@@ -81,6 +101,7 @@
 }
 
 .contato-linha a {
+  word-break: break-all; /* quebra o e-mail comprido no celular */
   color: var(--laranja-escuro);
 }
 
@@ -95,6 +116,13 @@
 
 
 /* 4. MEDIA QUERIES desta pagina - no fim do arquivo */
+
+/* --- Tablets: 768px ou mais --- */
+@media (min-width: 768px) {
+  .layout-contato {
+    grid-template-columns: 1.2fr 1fr;
+  }
+}
 
 /* --- Telas grandes: 1300px ou mais --- */
 @media (min-width: 1300px) {
