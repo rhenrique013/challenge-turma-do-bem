@@ -21,7 +21,8 @@
 
 /* cada integrante */
 .card-integrante {
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   padding: 24px;
   background-color: var(--branco);
   border: 1px solid var(--linha);
@@ -110,6 +111,6 @@
   }
 
   .card-integrante {
-    width: 340px;
+    max-width: 340px;
   }
 }
