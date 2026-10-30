@@ -13,8 +13,8 @@
 .hero {
   background-color: var(--branco);
   border-bottom: 1px solid var(--linha);
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 56px;
+  padding-bottom: 56px;
 }
 
 .hero h1 {
@@ -50,12 +50,46 @@
 .painel-imagem {
   width: 100%;
   border: 1px solid var(--linha);
-  border-radius: 4px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(17, 17, 16, 0.08);
+}
+/* 3b. SIMULADOR DE DOACAO (Sprint 2) */
+.simulador-rotulo {
+    display: block;
+    margin-top: 16px;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: var(--preto);
+}
+
+.simulador-campo {
+    width: 100%;
+    max-width: 240px;
+    padding: 12px 14px;
+    font-size: 18px;
+    border: 1px solid var(--linha);
+    border-radius: 4px;
+}
+
+.simulador-campo:focus {
+    border-color: var(--preto);
+    outline: 2px solid var(--limao);
+}
+
+.simulador-resultado { 
+    margin-top: 20px; 
+}
+
+/* frase que aparece depois que a pessoa digita */
+.simulador-frase {
+    margin-top: 16px;
+    font-weight: bold;
+    color: var(--laranja-escuro);
 }
 
 /* bloco "Quem esta por tras", com mais respiro que um cartao comum */
 .chamada {
-  padding: 48px;
+  padding: 28px;
 }
 
 
@@ -66,8 +100,17 @@
 }
 
 
-/* 5. MEDIA QUERIES desta pagina - no fim do arquivo */
-
+/* 5. MEDIA QUERIES desta pagina */
+/* --- Tablets: 768px ou mais --- */
+@media (min-width: 768px) {
+  .hero {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+  .chamada {
+    padding: 48px;  
+  }
+}
 /* --- Laptops e desktops: 992px ou mais --- */
 @media (min-width: 992px) {
   .hero {
