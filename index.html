@@ -87,21 +87,21 @@
             <p class="numero-grande">+90 mil</p>
             <p>jovens de 11 a 17 anos já atendidos</p>
             <hr class="cartao-linha">
-            <p class="texto-pequeno">Fonte: site oficial da Turma do Bem</p>
+            <p class="texto-pequeno">Fonte: <a href="https://turmadobem.org.br" target="_blank" rel="noopener noreferrer">site oficial da Turma do Bem</a></p>
           </article>
 
           <article class="cartao cartao-limao">
             <p class="numero-grande">+18 mil</p>
             <p>dentistas voluntários cadastrados</p>
             <hr class="cartao-linha">
-            <p class="texto-pequeno">Fonte: site oficial da Turma do Bem</p>
+            <p class="texto-pequeno">Fonte: <a href="https://turmadobem.org.br" target="_blank" rel="noopener noreferrer"></a>site oficial da Turma do Bem</a></p>
           </article>
 
           <article class="cartao cartao-limao">
             <p class="numero-grande">19 anos</p>
             <p>de prestação de contas publicada</p>
             <hr class="cartao-linha">
-            <p class="texto-pequeno">Fonte: relatórios de 2006 a 2024</p>
+            <p class="texto-pequeno">Fonte: <a href="https://turmadobem.org.br/prestacao-de-contas/" target="_blank" rel="noopener noreferrer">relatórios de 2006 a 2024</a></p>
           </article>
 
         </div>
@@ -140,9 +140,27 @@
             <p>Indicadores prontos para a prestação de contas, no lugar de
                fechar planilha à mão no fim do ano.</p>
           </article>
-
         </div>
+        <div class="cartao cartao-laranja espaco-acima simulador">
+          <h3>Simule: doar uma vez ou todo mês?</h3>
+          <p>Digite um valor e veja quanto a Turma do Bem recebe em um ano.</p>
 
+          <label for="valor-doacao" class="simulador-rotulo">Valor da doação (R$)</label>
+          <input type="number" id="valor-doacao" class="simulador-campo" min="1" placeholder="Ex.: 30">
+
+          <div class="grade-2 simulador-resultado">
+            <div>
+              <p class="texto-pequeno">Doando uma vez</p>
+              <p class="numero-grande" id="total-unico">R$ 0</p>
+            </div>
+            <div>
+              <p class="texto-pequeno">Doando todo mês, por 1 ano</p>
+              <p class="numero-grande" id="total-ano">R$ 0</p>
+            </div>
+          </div>
+          <p class="simulador-frase" id="simulador-frase"></p>
+        </div>
+        
       </div>
     </section>
 
@@ -155,7 +173,7 @@
           <p class="rotulo">Como isso aparece na tela</p>
           <h2>A estrutura do painel</h2>
           <p class="texto-apoio">
-            Este é o esboço da ferramenta nesta primeira sprint: a organização
+            Este é o esboço da ferramenta: a organização
             das áreas, ainda sem o acabamento visual. O desenho evolui a cada
             entrega.
           </p>
@@ -236,6 +254,6 @@
   </footer>
 
   <script src="js/menu.js"></script>
-
+  <script src="js/simulador.js"></script>
 </body>
 </html>
