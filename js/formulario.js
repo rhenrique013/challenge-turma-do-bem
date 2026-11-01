@@ -16,6 +16,13 @@ function limparErro(idCampo) {
   document.getElementById("erro-" + idCampo).textContent = "";
 }
 
+// confere se tem nome antes do @ e um ponto no meio do dominio
+function emailValido(email) {
+  const arroba = email.indexOf("@");
+  const ponto = email.lastIndexOf(".");
+  return arroba > 0 && ponto > arroba + 1 && ponto < email.length - 1;
+}
+
 // roda quando a pessoa clica em "Enviar mensagem"
 function validarFormulario(evento) {
   evento.preventDefault(); // segura o envio ate tudo estar certo
@@ -38,7 +45,7 @@ function validarFormulario(evento) {
   if (email === "") {
     mostrarErro("email", "Escreva o seu e-mail.");
     tudoCerto = false;
-  } else if (!email.includes("@") || !email.includes(".")) {
+  } else if (!emailValido(email)) {
     mostrarErro("email", "E-mail inválido. Exemplo: voce@email.com");
     tudoCerto = false;
   } else {
