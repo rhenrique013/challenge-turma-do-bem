@@ -44,6 +44,13 @@
 }
 
 
+/* link da fonte embaixo dos numeros (Sprint 2) */
+.texto-pequeno a {
+  color: var(--laranja-escuro);
+  text-decoration: underline;
+}
+
+
 /* 3. CARDS DA SOLUCAO E IMAGEM DO PAINEL */
 
 /* print do esboco do painel, ocupando a largura toda */
