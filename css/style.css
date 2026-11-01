@@ -662,6 +662,15 @@ p:last-child {
    cada media query acrescenta o que muda em telas maiores.
    ========================================================= */
 
+/* celular bem estreito: o painel e as tabelas perdem respiro para caber */
+@media (max-width: 359px) {
+  .tela-conteudo { padding: 12px; }
+  .indicadores { grid-template-columns: 1fr; }
+  .tabela th,
+  .tabela td { padding: 8px 6px; }
+  .tabela thead th { letter-spacing: 0; }
+}
+
 /* --- Tablets: 768px ou mais --- */
 @media (min-width: 768px) {
   h1 { font-size: 40px; }
