@@ -58,6 +58,8 @@
   font-size: 14px;
   color: var(--cinza);
 }
+
+
 /* campo com erro: borda vermelha (classe colocada pelo formulario.js) */
 .campo .campo-erro {
   border: 2px solid #C62828;
@@ -101,8 +103,8 @@
 }
 
 .contato-linha a {
-  word-break: break-all; /* quebra o e-mail comprido no celular */
   color: var(--laranja-escuro);
+  word-break: break-all; /* quebra o e-mail comprido no celular */
 }
 
 .contato-linha a:hover {
